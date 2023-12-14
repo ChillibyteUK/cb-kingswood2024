@@ -1,0 +1,43 @@
+.btn {
+    position: relative;
+    border-radius: 0.25rem;
+    font-weight: var(--fw-400);
+    font-size: var(--fs-300);
+    transition: all 0.3s ease;
+    // min-width: min(100%,280px);
+    text-transform: uppercase;
+    font-family: 'Noto Serif Display', Georgia, 'Times New Roman', Times, serif;
+    font-style: normal;
+
+
+    &-text {
+        padding-right: 0;
+        position: relative;
+        right: -8px;
+        transition: right var(--transition);
+        will-change: right, padding;
+    }
+    &:hover {
+        color: white;
+        .btn-text {
+            right: 0;
+            transform: translate3d(-4px, 1px 0);
+        }
+        .btn-arrow {
+            transform: translate3d(4px, 0, 0);
+            opacity: 1;
+        }
+    }
+}
+
+.btn-primary {
+}
+
+.btn-secondary {
+    background-color: var(--col-gold-400);
+    border-color: var(--col-gold-400);
+    &:hover {
+        background-color: var(--col-gold-600);
+        border-color: var(--col-gold-600);
+    }
+}

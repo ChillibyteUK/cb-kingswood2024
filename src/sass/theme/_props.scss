@@ -1,0 +1,61 @@
+$col-primary: #85782c;
+$col-primary-400: #045bb9;
+$col-primary-900: #022f69;
+$col-primary-200: #047bdc;
+$col-secondary: #ff9305;
+$col-dark: #022F6A;
+$col-darkest: hsl(0, 0%, 2%);
+$col-highlight: hsl(23, 83%, 53%);
+// $col-highlight: #eb7024;
+$col-grey: #FFF0F0;
+
+:root {
+
+    --hsl-gold-400: 48 51% 48%;
+    --hsl-gold-600: 51 50% 35%;
+
+    --col-gold-400: hsl(var(--hsl-gold-400));
+    --col-gold-600: hsl(var(--hsl-gold-600));
+
+    --hsl-green-400: 140 5% 57%;
+    --col-green-400: hsl(var(--hsl-green-400));
+    
+    --hsl-brown-400: 45 19% 24%;
+    --col-brown-400: hsl(var(--hsl-brown-400));
+
+
+    --hsl-primary-900: 214 96% 21%;
+    --hsl-primary-400: 211 96% 37%;
+    --hsl-primary-200: 207 96% 44%;
+    --hsl-primary-100: 207 96% 97%;
+    --hsl-secondary-400: 34 100% 51%;
+
+    --col-primary-900: hsl(var(--hsl-primary-900));
+    --col-primary-400: hsl(var(--hsl-primary-400));
+    --col-primary-200: hsl(var(--hsl-primary-200));
+    --col-primary-100: hsl(var(--hsl-primary-100));
+    --col-secondary-400: hsl(var(--hsl-secondary-400));
+
+    --col-light: #fafafa;
+    
+    --h-top: 122px;
+
+    --fw-400: 300;
+    --fw-600: 600;
+    --fw-700: 800;
+
+    --fs-200: clamp(0.69rem, calc(0.66rem + 0.15vw), 0.78rem);
+    --fs-300: clamp(0.83rem, calc(0.80rem + 0.18vw), 0.94rem);
+    --fs-400: clamp(1.00rem, calc(0.96rem + 0.22vw), 1.13rem);
+    --fs-500: clamp(1.20rem, calc(1.15rem + 0.26vw), 1.35rem);
+    --fs-600: clamp(1.44rem, calc(1.38rem + 0.31vw), 1.62rem);
+    --fs-700: clamp(1.73rem, calc(1.65rem + 0.38vw), 1.94rem);
+    --fs-800: clamp(2.07rem, calc(1.98rem + 0.45vw), 2.33rem);
+    --fs-900: clamp(2.49rem, calc(2.38rem + 0.54vw), 2.80rem);
+
+    --transition: 0.2s ease-out;
+
+    --border-lg: 1rem;
+    --border-sm: 0.5rem;
+
+}

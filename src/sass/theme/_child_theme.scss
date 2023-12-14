@@ -1,0 +1,204 @@
+// @import "props";
+@import "typography";
+@import "colours";
+@import "header";
+@import "footer";
+@import "buttons";
+// @import "blog";
+@import "forms";
+@import "blocks/blocks";
+// @import "case_study";
+
+
+body {
+    background-color: var(--col-background);
+    color: var(--text);
+}
+
+a:not(.btn) {
+    color: var(--col-primary-900);
+    font-weight: var(--fw-600);
+    text-decoration: none;
+}
+a {
+    text-decoration: none;
+    transition: color var(--transition);
+    &:hover {
+        color: var(--col-secondary-400);
+    }
+}
+
+a.noline {
+    text-decoration: none;
+}
+a.anchor {
+    display: block;
+    position: relative;
+    top: calc(var(--h-top) * -1); //-150px;
+    visibility: hidden;
+}
+
+@media (min-width:992px) {
+    .cols-lg-2 {
+        columns: 2;
+    }
+    .cols-lg-3 {
+        columns: 3;
+    }
+}
+
+.mw-md-65 {
+    @media (min-width:992px) {
+        max-width: 65ch;
+        // margin: auto;
+    }
+}
+
+.order-6 {
+    order: 6!important;
+}
+
+// @media (max-width:768px) {
+//     .wp-block-image {
+//         figure.alignright {
+//             float: none !important;
+//             margin: auto !important;
+//         }
+//     }
+// }
+
+.share-icons {
+    padding-top: 1rem;
+    a:not(:last-of-type) {
+        margin-right: 0.5rem;
+    }
+}
+
+.social-share {
+    a {
+        font-size: var(--fs-450);
+        &:hover {
+            color: var(--col-primary-400);
+        }
+    }
+}
+
+// :not(.share-icons,.social-icons,figure,.cb,.rplg-biz-name) > a[target="_blank"]:not(.btn)::after {
+//     content: "\f08e";
+//     font-family: "Font Awesome 6 Free";
+//     font-weight: 600;
+//     margin-left: 0.5rem;
+//     display: inline-block;
+// }
+// :not(.share-icons,.social-icons,figure,.cb,.rplg-biz-name) > a[target="_blank"]:not(.btn)::after {
+//     font-weight: 600;
+// }
+
+
+#breadcrumbs {
+    font-size: 0.889rem;
+}
+
+
+.reading {
+    font-size: 0.889rem;
+    font-style: italic;
+}
+
+.feature-link {
+    color: var(--highlight);
+    font-size: var(--fs-300);
+    font-weight: var(--fw-600);
+    &::before {
+        content: "\f044";
+        font-family: 'font awesome 6 free';
+        font-weight: 600;
+        margin-right: 0.75rem;
+    }
+}
+
+.sidebar {
+    top: calc(var(--h-top) / 2);
+    .active {
+        color: var(--col-secondary-400);
+        &::before {
+            color: var(--col-secondary-400);
+        }
+        a {
+            color: var(--col-secondary-400) !important;
+        }
+    }
+    ul {
+        padding-inline-start: 0;
+        @media (min-width:576px) {
+            columns: 2;
+        }
+        @media (min-width:992px) {
+            margin-bottom: 3rem;
+            columns: 1;
+        }
+    }
+    li {
+        list-style: none;
+        position: relative;
+        line-height: 2.5;
+        font-weight: var(--fw-600);
+        color: var(--col-primary-400) !important;
+        a {
+            color: var(--col-primary-400) !important;
+            &:hover {
+                color: var(--col-secondary-400) !important;
+            }
+        }
+        &::before {
+            content: "\f6d1";
+            font-family: 'font awesome 6 free';
+            font-weight: var(--fw-600);
+            color: var(--col-primary-400);
+            margin-right: 0.25rem;
+        }
+    }
+    @media (min-width:992px) {
+        border-right: 1px solid var(--col-primary-400);
+        padding-right: 1.5rem;
+    }
+}
+.sidebar_cta {
+    margin-top: 1rem;
+    background-color: var(--col-primary-200);
+    padding: 1.5rem 2rem;
+    border-radius: var(--border-sm);
+    max-width: 400px;
+    margin-inline: auto;
+    a {
+        color: #fff;
+        font-weight: var(--fw-600);
+        &:hover {
+            color: var(--col-secondary-400);
+        }
+    }
+}
+
+// show stuff that overflows horizontally
+// * {
+//     outline: 1px solid #f00 !important;
+// }
+// show stuff that overflows horizontally via console JS
+/*
+var all = document.getElementsByTagName("*"), i = 0, rect, docWidth = document.documentElement.offsetWidth;
+for (; i < all.length; i++) {
+    rect = all[i].getBoundingClientRect();
+    if (rect.right > docWidth || rect.left < 0){
+        console.log(all[i]);
+        all[i].style.borderTop = '1px solid red';
+    }
+}
+*/
+
+// @mixin fluid-type($min-vw, $max-vw, $min-value, $max-value) {
+// 	$factor: 1 / ($max-vw - $min-vw) * ($max-value - $min-value);
+// 	$calc-value: unquote('#{ $min-value - ($min-vw * $factor) } + #{ 100vw * $factor }');
+
+// 	font-size: $min-value; // Fallback for older browsers
+// 	font-size: clamp(#{if($min-value > $max-value, $max-value, $min-value)}, #{$calc-value}, #{if($min-value > $max-value, $min-value, $max-value)});
+// }

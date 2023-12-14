@@ -1,0 +1,93 @@
+.hero {
+    
+    --_c-height: 500px;
+
+    height: var(--_c-height);
+    position: relative;
+    isolation: isolate;
+
+    #heroCarousel {
+        position: absolute;
+        inset: 0;
+        height: var(--_c-height);
+        overflow: hidden;
+        z-index: -2;
+    }
+    
+    .carousel-inner {
+        height: var(--_c-height);
+    }
+    .carousel-item {
+        height: var(--_c-height);
+        img {
+            height: var(--_c-height);
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    .overlay {
+        position: absolute;
+        inset: 0;
+        background-color: hsl(0 0 0% / 0.4);
+        z-index: -1;
+        pointer-events: none;
+    }
+
+    
+    .container-xl {
+        height: var(--_c-height);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        color: white;
+        position: relative;
+        z-index: 1;
+    }
+
+    &__pre-title {
+        text-transform: uppercase;
+        letter-spacing: 3px;
+    }
+    &__title {
+        font-size: 3rem;
+        margin-bottom: 1rem;
+    }
+    &__content {
+        max-width: 70ch;
+    }
+
+    &__ctas {
+        display: flex;
+        gap: 1rem;
+    }
+    &__cta {
+        font-size: var(--fs-300);
+        width: 200px;
+        padding: 0.5rem 1rem;
+        border: 1px solid white;
+        color: white;
+        text-transform: uppercase;
+        font-weight: var(--fw-200);
+        a {
+            color: white;
+        }
+        span {
+            font-weight: var(--fw-900);
+        }
+    }
+
+    &__cta--green {
+        border-color: var(--col-green-400);
+        i {
+            color:  var(--col-green-400);
+        }
+    }
+    &__cta--gold {
+        border-color: var(--col-gold-400);
+        i {
+            color:  var(--col-gold-400);
+        }
+    }
+
+}
