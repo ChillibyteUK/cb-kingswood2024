@@ -50,7 +50,6 @@
         letter-spacing: 3px;
     }
     &__title {
-        font-size: 3rem;
         margin-bottom: 1rem;
     }
     &__content {
@@ -63,17 +62,19 @@
     }
     &__cta {
         font-size: var(--fs-300);
-        width: 200px;
+        width: 220px;
         padding: 0.5rem 1rem;
-        border: 1px solid white;
-        color: white;
+        border: 2px solid white;
+        color: white !important;
         text-transform: uppercase;
-        font-weight: var(--fw-200);
-        a {
-            color: white;
-        }
+        font-weight: var(--fw-400) !important;
+        letter-spacing: 1px;
         span {
-            font-weight: var(--fw-900);
+            font-weight: var(--fw-600);
+        }
+        transition: background-color var(--transition);
+        i {
+            transition: color var(--transition);
         }
     }
 
@@ -82,11 +83,23 @@
         i {
             color:  var(--col-green-400);
         }
+        &:hover {
+            background-color: var(--col-green-400);
+            i {
+                color: white;
+            }    
+        }
     }
     &__cta--gold {
         border-color: var(--col-gold-400);
         i {
             color:  var(--col-gold-400);
+        }
+        &:hover {
+            background-color: var(--col-gold-400);
+            i {
+                color: white;
+            }
         }
     }
 
