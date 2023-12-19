@@ -6,30 +6,30 @@
     font-weight: 400;
     src: url('../fonts/noto-serif-display-v24-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
-/* noto-serif-display-italic - latin */
+/* noto-serif-display-300italic - latin */
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Noto Serif Display';
     font-style: italic;
-    font-weight: 400;
-    src: url('../fonts/noto-serif-display-v24-latin-italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* noto-serif-display-600italic - latin */
-@font-face {
+    font-weight: 300;
+    src: url('../fonts/noto-serif-display-v24-latin-300italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* noto-serif-display-500italic - latin */
+  @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Noto Serif Display';
     font-style: italic;
-    font-weight: 600;
-    src: url('../fonts/noto-serif-display-v24-latin-600italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
-/* roboto-regular - latin */
+    font-weight: 500;
+    src: url('../fonts/noto-serif-display-v24-latin-500italic.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+/* roboto-300 - latin */
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
     font-family: 'Roboto';
     font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/roboto-v30-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-}
+    font-weight: 300;
+    src: url('../fonts/roboto-v30-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
 
 :root {
     font-variant-ligatures: none;
@@ -46,21 +46,23 @@ body {
     line-height: 1.556;
     font-style: normal;
     color: black;
-    font-family: 'Roboto', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-family: var(--ff-body);
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, .h99 {
-    font-family: 'Noto Serif Display', Georgia, 'Times New Roman', Times, serif;
+    font-family: var(--ff-headings);
     font-style: italic;
     margin-bottom: 0.5rem;
-    font-weight: var(--fw-600);
+    font-weight: var(--fw-300);
+    span {
+        font-weight: var(--fw-500);
+    }
 }
 
 h1, .h1 {
-    font-weight: var(--fw-700);
     font-size: var(--fs-900);
 }
 h2, .h2 {
@@ -78,7 +80,7 @@ h5, .h5 {
 
 
 strong, b {
-    font-weight: var(--fw-900);
+    font-weight: var(--fw-600);
 }
 
 .w-constrained {

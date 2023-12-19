@@ -8,6 +8,12 @@
   --col-green-400: hsl(var(--hsl-green-400));
   --hsl-brown-400: 45 19% 24%;
   --col-brown-400: hsl(var(--hsl-brown-400));
+  --hsl-peony-200: 353 13% 86%;
+  --col-peony-200: hsl(var(--hsl-peony-200));
+  --hsl-peony-400: 353 11% 54%;
+  --col-peony-400: hsl(var(--hsl-peony-400));
+  --hsl-peony-900: 353 11% 24%;
+  --col-peony-900: hsl(var(--hsl-peony-900));
   --hsl-primary-900: 214 96% 21%;
   --hsl-primary-400: 211 96% 37%;
   --hsl-primary-200: 207 96% 44%;
@@ -18,11 +24,14 @@
   --col-primary-200: hsl(var(--hsl-primary-200));
   --col-primary-100: hsl(var(--hsl-primary-100));
   --col-secondary-400: hsl(var(--hsl-secondary-400));
-  --col-light: #fafafa;
+  --col-light: #f4f4f4;
   --h-top: 122px;
+  --fw-300: 300;
   --fw-400: 300;
+  --fw-500: 500;
   --fw-600: 600;
   --fw-700: 800;
+  /*
   --fs-200: clamp(0.69rem, calc(0.66rem + 0.15vw), 0.78rem);
   --fs-300: clamp(0.83rem, calc(0.80rem + 0.18vw), 0.94rem);
   --fs-400: clamp(1.00rem, calc(0.96rem + 0.22vw), 1.13rem);
@@ -31,9 +40,20 @@
   --fs-700: clamp(1.73rem, calc(1.65rem + 0.38vw), 1.94rem);
   --fs-800: clamp(2.07rem, calc(1.98rem + 0.45vw), 2.33rem);
   --fs-900: clamp(2.49rem, calc(2.38rem + 0.54vw), 2.80rem);
+  */
+  --fs-300: 0.889rem;
+  --fs-400: 1rem;
+  --fs-450: 1.167rem;
+  --fs-500: 1.333rem;
+  --fs-600: 1.667rem;
+  --fs-700: 2rem;
+  --fs-800: 2.667rem;
+  --fs-900: 3.333rem;
   --transition: 0.2s ease-out;
   --border-lg: 1rem;
   --border-sm: 0.5rem;
+  --ff-headings: "Noto Serif Display", Georgia, "Times New Roman", Times, serif;
+  --ff-body: "Roboto", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 *,
