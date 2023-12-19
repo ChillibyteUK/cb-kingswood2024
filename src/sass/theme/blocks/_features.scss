@@ -60,5 +60,8 @@
         span {
             font-weight: var(--fw-600);
         }
+        &:hover {
+            background-color: var(--col-gold-600);
+        }
     }
 }

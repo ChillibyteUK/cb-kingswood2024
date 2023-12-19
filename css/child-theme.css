@@ -22137,6 +22137,9 @@ body .gform_wrapper .gform_footer button {
 .features__button span {
   font-weight: var(--fw-600);
 }
+.features__button:hover {
+  background-color: var(--col-gold-600);
+}
 
 .wp-block-quote--cb {
   position: relative;
