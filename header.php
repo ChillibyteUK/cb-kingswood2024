@@ -89,8 +89,8 @@ wp_head();
             "@context": "http://schema.org",
             "@type": "Organization",
             "name": "---",
-            "url": "https://www.whcouriers.com/",
-            "logo": "https://www.whcouriers.com/wp-content/theme/cb-cb-kingswood2024/img/wh-couriers-logo.png",
+            "url": "https://www.kingswoodathome.co.uk/",
+            "logo": "https://www.kingswoodathome.co.uk/wp-content/theme/cb-kingswood2024/img/kingswood-logo.png",
             "description": "...",
             "address": {
                 "@type": "PostalAddress",
@@ -101,7 +101,7 @@ wp_head();
                 "addressCountry": "UK"
             },
             "telephone": "+44 (0) ---- ------",
-            "email": "hello@whcouriers.com"
+            "email": "hello@kingswoodathome.co.uk"
         }
         }
     </script>
