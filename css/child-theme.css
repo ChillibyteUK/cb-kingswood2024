@@ -21549,13 +21549,17 @@ strong, b {
 .btn, .fieldset-cf7mls-wrapper button,
 .fieldset-cf7mls-wrapper .wpcf7-form-control.wpcf7-submit.has-spinner {
   position: relative;
-  border-radius: 0.25rem;
+  border-radius: 0;
   font-weight: var(--fw-400);
   font-size: var(--fs-300);
   transition: all 0.3s ease;
   text-transform: uppercase;
-  font-family: "Noto Serif Display", Georgia, "Times New Roman", Times, serif;
+  font-family: var(--ff-body);
   font-style: normal;
+}
+.btn span, .fieldset-cf7mls-wrapper button span,
+.fieldset-cf7mls-wrapper .wpcf7-form-control.wpcf7-submit.has-spinner span {
+  font-weight: var(--fw-600);
 }
 .btn-text {
   padding-right: 0;

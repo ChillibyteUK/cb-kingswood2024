@@ -1,13 +1,17 @@
 .btn {
     position: relative;
-    border-radius: 0.25rem;
+    border-radius: 0;
     font-weight: var(--fw-400);
     font-size: var(--fs-300);
     transition: all 0.3s ease;
     // min-width: min(100%,280px);
     text-transform: uppercase;
-    font-family: 'Noto Serif Display', Georgia, 'Times New Roman', Times, serif;
+    font-family: var(--ff-body);
     font-style: normal;
+
+    span {
+        font-weight: var(--fw-600);
+    }
 
 
     &-text {
