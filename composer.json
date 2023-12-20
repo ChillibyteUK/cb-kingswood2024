@@ -1,5 +1,5 @@
 {
-    "name": "holger1411/cb-cb-kingswood2024",
+    "name": "holger1411/cb-kingswood2024",
     "description": "Basic Child Theme for Understrap Theme Framework",
     "type": "library",
     "license": "GPL-2.0",
@@ -8,5 +8,5 @@
         "smalot/pdfparser": "^2.2"
     },
     "keywords": ["wordpress","theme","bootstrap"],
-    "homepage": "https://github.com/holger1411/cb-cb-kingswood2024"
+    "homepage": "https://github.com/holger1411/cb-kingswood2024"
 }

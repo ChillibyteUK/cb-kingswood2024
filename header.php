@@ -4,7 +4,7 @@
  *
  * Displays all of the <head> section and everything up till <div id="content">
  *
- * @package cb-cb-kingswood2024
+ * @package cb-kingswood2024
  */
 
 // Exit if accessed directly.
@@ -120,8 +120,8 @@ do_action('wp_body_open');
                 <a href="/" class="logo" aria-label="Home"></a>
                 <span class="d-none d-lg-block contact">Call to request an appointment <strong><?=do_shortcode('[contact_phone]')?></strong></span>
                 <div class="d-none d-lg-flex contact">
-                    <a href="/contact/book-appointment/" class="btn btn-secondary">Book an <span>Appointment</span></a>
-                    <a href="/request-a-brochure/" class="btn btn-secondary">Request a <span>Brochure</span></a>
+                    <a href="/contact/book-appointment/" class="button button--sm">Book an <span>Appointment</span></a>
+                    <a href="/request-a-brochure/" class="button button--sm">Request a <span>Brochure</span></a>
                 </div>
                 <div class="button-container text-end d-flex d-lg-none align-items-center justify-content-between">
                     <?=do_shortcode('[contact_phone_icon]')?>

@@ -43,25 +43,4 @@
         font-size: var(--fs-300);
     }
 
-    &__button {
-        display: block;
-        text-align: center;
-        width: min(300px,90vw);
-        margin-inline: auto;
-        background-color: var(--col-gold-400);
-        color: white !important;
-        padding: 0.5rem 1rem;
-        text-transform: uppercase;
-        font-weight: var(--fw-400) !important;
-        letter-spacing: 1px;
-        position: relative;
-        line-height: 1;
-        transition: background-color var(--transition);
-        span {
-            font-weight: var(--fw-600);
-        }
-        &:hover {
-            background-color: var(--col-gold-600);
-        }
-    }
 }

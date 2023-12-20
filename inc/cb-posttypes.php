@@ -4,12 +4,12 @@ function cb_register_post_types()
 {
 
     $labels = [
-        "name" => __("Testimonials", "cb-cb-kingswood2024"),
-        "singular_name" => __("Testimonial", "cb-cb-kingswood2024"),
+        "name" => __("Testimonials", "cb-kingswood2024"),
+        "singular_name" => __("Testimonial", "cb-kingswood2024"),
     ];
 
     $args = [
-        "label" => __("Testimonials", "cb-cb-kingswood2024"),
+        "label" => __("Testimonials", "cb-kingswood2024"),
         "labels" => $labels,
         "description" => "",
         "public" => true,

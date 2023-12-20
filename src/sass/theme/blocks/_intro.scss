@@ -27,14 +27,25 @@
         margin-bottom: 2rem;
     }
     &__content {
-        columns: 2;
         gap: 1rem;
+        @media (min-width: 768px) {
+            columns: 2;
+        }
         p:first-of-type {
             font-family: var(--ff-headings);
             font-size: var(--fs-600);
             font-style: italic;
-            line-height: 130%;
+            line-height: 120%;
             color: var(--col-gold-400);
+            @supports (initial-letter: 2) {
+                &::first-letter {
+                    initial-letter: 2;
+                    font-weight: 500;
+                    padding-right: 0.75rem;
+                    color: var(--col-gold-400);
+                    -webkit-background-clip: text;
+                }
+            }
         }
     }
 

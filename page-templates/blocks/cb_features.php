@@ -42,6 +42,6 @@
                     can be confident you'll make the right choice.</div>
             </div>
         </div>
-        <a href="/about/why-choose-us/" class="features__button">Find out <span>more</span></a>
+        <a href="/about/why-choose-us/" class="button">Find out <span>more</span></a>
     </div>
 </section>

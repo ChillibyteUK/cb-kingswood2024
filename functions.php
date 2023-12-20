@@ -72,7 +72,7 @@ add_filter('script_loader_tag', 'cb_defer_scripts', 10, 3);
  */
 function add_child_theme_textdomain()
 {
-    load_child_theme_textdomain('cb-cb-kingswood2024', get_stylesheet_directory() . '/languages');
+    load_child_theme_textdomain('cb-kingswood2024', get_stylesheet_directory() . '/languages');
 }
 add_action('after_setup_theme', 'add_child_theme_textdomain');
 

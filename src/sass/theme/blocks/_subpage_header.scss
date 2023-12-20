@@ -1,0 +1,16 @@
+.subpage_header {
+    &__title {
+        margin-bottom: 1rem;
+    }
+    &__content {
+        margin-bottom: 1rem;
+    }
+    &__buttons {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        a {
+            margin-inline: 0;
+        }
+    }
+}

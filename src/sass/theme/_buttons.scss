@@ -1,47 +1,25 @@
-.btn {
-    position: relative;
-    border-radius: 0;
-    font-weight: var(--fw-400);
-    font-size: var(--fs-300);
-    transition: all 0.3s ease;
-    // min-width: min(100%,280px);
+.button {
+    display: block;
+    text-align: center;
+    width: min(300px,90vw);
+    margin-inline: auto;
+    background-color: var(--col-gold-400);
+    color: white !important;
+    padding: 0.5rem 1rem;
     text-transform: uppercase;
-    font-family: var(--ff-body);
-    font-style: normal;
-
+    font-weight: var(--fw-400) !important;
+    letter-spacing: 1px;
+    position: relative;
+    line-height: 1;
+    transition: background-color var(--transition);
     span {
         font-weight: var(--fw-600);
     }
-
-
-    &-text {
-        padding-right: 0;
-        position: relative;
-        right: -8px;
-        transition: right var(--transition);
-        will-change: right, padding;
-    }
-    &:hover {
-        color: white;
-        .btn-text {
-            right: 0;
-            transform: translate3d(-4px, 1px 0);
-        }
-        .btn-arrow {
-            transform: translate3d(4px, 0, 0);
-            opacity: 1;
-        }
-    }
-}
-
-.btn-primary {
-}
-
-.btn-secondary {
-    background-color: var(--col-gold-400);
-    border-color: var(--col-gold-400);
     &:hover {
         background-color: var(--col-gold-600);
-        border-color: var(--col-gold-600);
     }
+}
+
+.button--sm {
+    width: max-content;
 }

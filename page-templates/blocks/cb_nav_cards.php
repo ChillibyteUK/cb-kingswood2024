@@ -4,7 +4,7 @@
             <?php
         while(have_rows('cards')) {
             the_row();
-            $l = get_sub_field('link');
+            $l = get_sub_field('link') ?? null;
             ?>
             <div class="nav_cards__card">
                 <img class="nav_cards__image"
@@ -17,9 +17,15 @@
                     <div>
                         <?=get_sub_field('content')?>
                     </div>
+                    <?php
+                    if ($l) {
+                        ?>
                     <a href="<?=$l['url']?>"
                         target="<?=$l['target']?>"
                         class="nav_cards__button"><?=html_entity_decode($l['title'])?></a>
+                        <?php
+                    }
+                    ?>
                 </div>
             </div>
             <?php

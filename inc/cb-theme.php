@@ -55,18 +55,18 @@ function widgets_init()
 {
     // register_sidebar(
     //     array(
-    //         'name'          => __('Footer Col 1', 'cb-cb-kingswood2024'),
+    //         'name'          => __('Footer Col 1', 'cb-kingswood2024'),
     //         'id'            => 'footer-1',
-    //         'description'   => __('Footer Col 1', 'cb-cb-kingswood2024'),
+    //         'description'   => __('Footer Col 1', 'cb-kingswood2024'),
     //         'before_widget' => '<div id="%1$s" class="footer-widget %2$s">',
     //         'after_widget'  => '</div>',
     //     )
     // );
 
     register_nav_menus(array(
-        'primary_nav' => __('Primary Nav', 'cb-cb-kingswood2024'),
-        'footer_menu1' => __('Footer Menu 1', 'cb-cb-kingswood2024'),
-        'footer_menu2' => __('Footer Menu 2', 'cb-cb-kingswood2024'),
+        'primary_nav' => __('Primary Nav', 'cb-kingswood2024'),
+        'footer_menu1' => __('Footer Menu 1', 'cb-kingswood2024'),
+        'footer_menu2' => __('Footer Menu 2', 'cb-kingswood2024'),
     ));
 
 
