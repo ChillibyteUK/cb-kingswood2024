@@ -10,3 +10,16 @@
 .has-secondary-400-color {
     color: var(--col-secondary-400) !important;
 }
+
+.bg-grey-900 {
+    background-color: var(--col-grey-900);
+    color: var(--col-light);
+}
+.bg-grey-700 {
+    background-color: var(--col-grey-700);
+    color: var(--col-light);
+}
+.bg-grey-500 {
+    background-color: var(--col-grey-500);
+    color: var(--col-light);
+}

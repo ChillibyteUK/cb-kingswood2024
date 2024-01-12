@@ -92,6 +92,35 @@ function acf_blocks()
             'mode'	=> 'edit',
             'supports' => array('mode' => false),
         ));
+
+        // DOORS
+        acf_register_block_type(array(
+            'name'				=> 'cb_door_style',
+            'title'				=> __('CB Door Style'),
+            'category'			=> 'layout',
+            'icon'				=> 'cover-image',
+            'render_template'	=> 'page-templates/blocks/cb_door_style.php',
+            'mode'	=> 'edit',
+            'supports' => array('mode' => false),
+        ));
+        acf_register_block_type(array(
+            'name'				=> 'cb_door_finish',
+            'title'				=> __('CB Door Finish'),
+            'category'			=> 'layout',
+            'icon'				=> 'cover-image',
+            'render_template'	=> 'page-templates/blocks/cb_door_finish.php',
+            'mode'	=> 'edit',
+            'supports' => array('mode' => false),
+        ));
+        acf_register_block_type(array(
+            'name'				=> 'cb_door_colour',
+            'title'				=> __('CB Door Colour'),
+            'category'			=> 'layout',
+            'icon'				=> 'cover-image',
+            'render_template'	=> 'page-templates/blocks/cb_door_colour.php',
+            'mode'	=> 'edit',
+            'supports' => array('mode' => false),
+        ));
     }
 }
 add_action('acf/init', 'acf_blocks');
@@ -150,6 +179,83 @@ function modify_core_heading($attributes, $content)
     $content = ob_get_clean();
     return $content;
 }
+
+
+add_filter('acf/load_field/name=door_style', 'populate_door_style_choices');
+
+function populate_door_style_choices($field) {
+    // Ensure ACF is loaded
+    if (function_exists('get_field')) {
+        // Get repeater field data from options page
+        $repeater_values = get_field('door_styles', 'option');
+
+        // Check if there's any data
+        if ($repeater_values) {
+            // Clear any default choices set in ACF admin
+            $field['choices'] = array();
+
+            // Loop over the repeater rows
+            foreach ($repeater_values as $row) {
+                // Adjust the line below according to the structure of your repeater sub-fields
+                $option_value = $row['title']; // Replace 'sub_field_name' with the actual sub-field name you want to use
+                // Populate the choices array
+                $field['choices'][$option_value] = $option_value;
+            }
+        }
+    }
+    return $field;
+}
+
+add_filter('acf/load_field/name=door_finish', 'populate_door_finish_choices');
+
+function populate_door_finish_choices($field) {
+    // Ensure ACF is loaded
+    if (function_exists('get_field')) {
+        // Get repeater field data from options page
+        $repeater_values = get_field('door_finishes', 'option');
+
+        // Check if there's any data
+        if ($repeater_values) {
+            // Clear any default choices set in ACF admin
+            $field['choices'] = array();
+
+            // Loop over the repeater rows
+            foreach ($repeater_values as $row) {
+                // Adjust the line below according to the structure of your repeater sub-fields
+                $option_value = $row['title']; // Replace 'sub_field_name' with the actual sub-field name you want to use
+                // Populate the choices array
+                $field['choices'][$option_value] = $option_value;
+            }
+        }
+    }
+    return $field;
+}
+
+add_filter('acf/load_field/name=door_colour', 'populate_door_colour_choices');
+
+function populate_door_colour_choices($field) {
+    // Ensure ACF is loaded
+    if (function_exists('get_field')) {
+        // Get repeater field data from options page
+        $repeater_values = get_field('door_colours', 'option');
+
+        // Check if there's any data
+        if ($repeater_values) {
+            // Clear any default choices set in ACF admin
+            $field['choices'] = array();
+
+            // Loop over the repeater rows
+            foreach ($repeater_values as $row) {
+                // Adjust the line below according to the structure of your repeater sub-fields
+                $option_value = $row['title']; // Replace 'sub_field_name' with the actual sub-field name you want to use
+                // Populate the choices array
+                $field['choices'][$option_value] = $option_value;
+            }
+        }
+    }
+    return $field;
+}
+
 /*
 
 function modify_core_buttons($attributes, $content) {

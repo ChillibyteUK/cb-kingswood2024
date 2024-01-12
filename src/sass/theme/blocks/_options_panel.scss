@@ -1,0 +1,29 @@
+.options_panel {
+    &__heading {
+        font-weight: var(--fw-700);
+        text-transform: uppercase;
+        text-align: center;
+        padding-block: 1rem;
+    }
+    &__grid {
+        padding-block: 1rem;
+        display: flex;
+        gap: 2rem;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    &__card {
+        max-width: 100px;
+        img {
+            display: block;
+            width: 60px;
+            margin-inline: auto;
+            margin-bottom: 0.5rem;
+        }
+        div {
+            text-align: center;
+            font-size: var(--fs-200);
+        }
+    }
+
+}

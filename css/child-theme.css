@@ -25,6 +25,9 @@
   --col-primary-100: hsl(var(--hsl-primary-100));
   --col-secondary-400: hsl(var(--hsl-secondary-400));
   --col-light: #f4f4f4;
+  --col-grey-900: #2A2A2A;
+  --col-grey-700: #747474;
+  --col-grey-500: #ADADAD;
   --h-top: 122px;
   --fw-400: 300;
   --fw-500: 500;
@@ -21314,6 +21317,21 @@ strong, b {
   color: var(--col-secondary-400) !important;
 }
 
+.bg-grey-900 {
+  background-color: var(--col-grey-900);
+  color: var(--col-light);
+}
+
+.bg-grey-700 {
+  background-color: var(--col-grey-700);
+  color: var(--col-light);
+}
+
+.bg-grey-500 {
+  background-color: var(--col-grey-500);
+  color: var(--col-light);
+}
+
 :root {
   --topbit-height: 60px;
 }
@@ -22171,6 +22189,9 @@ body .gform_wrapper .gform_footer button {
   margin-inline: 0;
 }
 
+.four_images {
+  background-color: var(--col-light);
+}
 .four_images__grid {
   display: grid;
   gap: 1rem;
@@ -22196,6 +22217,7 @@ body .gform_wrapper .gform_footer button {
   object-fit: cover;
   -o-object-position: center;
   object-position: center;
+  aspect-ratio: 16/9;
 }
 .four_images__grid img:nth-of-type(1) {
   grid-area: one;
@@ -22210,6 +22232,36 @@ body .gform_wrapper .gform_footer button {
 }
 .four_images__grid img:nth-of-type(4) {
   grid-area: four;
+}
+.four_images .four_images__image:not(#four_images__large) {
+  cursor: pointer;
+}
+
+.options_panel__heading {
+  font-weight: var(--fw-700);
+  text-transform: uppercase;
+  text-align: center;
+  padding-block: 1rem;
+}
+.options_panel__grid {
+  padding-block: 1rem;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.options_panel__card {
+  max-width: 100px;
+}
+.options_panel__card img {
+  display: block;
+  width: 60px;
+  margin-inline: auto;
+  margin-bottom: 0.5rem;
+}
+.options_panel__card div {
+  text-align: center;
+  font-size: var(--fs-200);
 }
 
 .wp-block-quote--cb {
