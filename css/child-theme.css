@@ -22218,6 +22218,7 @@ body .gform_wrapper .gform_footer button {
   -o-object-position: center;
   object-position: center;
   aspect-ratio: 16/9;
+  width: 100%;
 }
 .four_images__grid img:nth-of-type(1) {
   grid-area: one;

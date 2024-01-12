@@ -2,9 +2,9 @@
     <div class="container-xl">
         <div class="four_images__grid">
             <img id="four_images__large" class="four_images__image" src="<?=wp_get_attachment_image_url(get_field('image_1'),'full')?>" alt="">
-            <img class="four_images__image" src="<?=wp_get_attachment_image_url(get_field('image_2'),'large')?>" alt="">
-            <img class="four_images__image" src="<?=wp_get_attachment_image_url(get_field('image_3'),'large')?>" alt="">
-            <img class="four_images__image" src="<?=wp_get_attachment_image_url(get_field('image_4'),'large')?>" alt="">
+            <img class="four_images__image" src="<?=wp_get_attachment_image_url(get_field('image_2'),'full')?>" alt="">
+            <img class="four_images__image" src="<?=wp_get_attachment_image_url(get_field('image_3'),'full')?>" alt="">
+            <img class="four_images__image" src="<?=wp_get_attachment_image_url(get_field('image_4'),'full')?>" alt="">
         </div>
     </div>
 </section>
