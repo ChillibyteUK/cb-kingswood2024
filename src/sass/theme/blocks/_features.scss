@@ -32,12 +32,12 @@
         margin-bottom: 0.25rem;
     }
     &__title {
-        font-family: var(--ff-headings);
-        font-style: italic;
-        color: var(--col-gold-400);
-        font-size: var(--fs-600);
+        font-family: var(--ff-body);
+        color: var(--col-green-400);
+        font-size: var(--fs-500);
         margin-bottom: 0.5rem;
         line-height: 110%;
+        text-transform: uppercase;
     }
     &__content {
         font-size: var(--fs-300);
