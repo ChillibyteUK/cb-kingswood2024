@@ -27,7 +27,9 @@
         }
     }
     &__card-title {
-        font-size: var(--fs-500);
+        font-size: var(--fs-400);
+        text-transform: uppercase;
+        font-weight: var(--fw-700);
         display: grid;
         place-content: center;
         padding: 1rem;

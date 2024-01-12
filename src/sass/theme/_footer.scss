@@ -61,8 +61,9 @@
 
     &__heading {
         font-size: var(--fs-400);
-        font-weight: var(--fw-600);
-        margin-bottom: 0.5rem;
+        font-weight: var(--fw-700);
+        margin-bottom: 0.25rem;
+        text-transform: uppercase;
     }
 
     &__phone {

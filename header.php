@@ -18,6 +18,9 @@ session_start();
     <meta
         charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1">
+    <link rel="stylesheet" href="https://use.typekit.net/uny4fbv.css">
+
+<!-- 
     <link rel="preload"
         href="<?=get_stylesheet_directory_uri()?>/fonts/noto-serif-display-v24-latin-600italic.woff2"
         as="font" type="font/woff2" crossorigin="anonymous">
@@ -29,7 +32,7 @@ session_start();
         as="font" type="font/woff2" crossorigin="anonymous">
     <link rel="preload"
         href="<?=get_stylesheet_directory_uri()?>/fonts/roboto-v30-latin-regular.woff2"
-        as="font" type="font/woff2" crossorigin="anonymous">
+        as="font" type="font/woff2" crossorigin="anonymous"> -->
     <?php
 if (get_field('ga_property', 'options')) {
     ?>

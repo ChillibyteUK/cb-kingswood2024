@@ -34,6 +34,7 @@
         font-style: normal;
         color: var(--col-green-400);
         margin-bottom: 0.5rem;
+        text-transform: uppercase;
     }
     &__button {
         align-self: flex-end;
@@ -47,7 +48,7 @@
         letter-spacing: 1px;
         transition: color var(--transition), background-color var(--transition);
         span {
-            font-weight: var(--fw-600);
+            font-weight: var(--fw-700);
         }
         &:hover {
             background-color: var(--col-green-400);
