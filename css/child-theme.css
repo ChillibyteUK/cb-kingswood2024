@@ -42,6 +42,7 @@
   --fs-800: clamp(2.07rem, calc(1.98rem + 0.45vw), 2.33rem);
   --fs-900: clamp(2.49rem, calc(2.38rem + 0.54vw), 2.80rem);
   */
+  --fs-200: 0.778rem;
   --fs-300: 0.889rem;
   --fs-400: 1rem;
   --fs-450: 1.167rem;
@@ -21928,7 +21929,7 @@ body .gform_wrapper .gform_footer button {
     flex-basis: calc(33.333% - 1rem);
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1400px) {
   .sibling-nav__card {
     flex-basis: calc(16.666% - 1rem);
   }
@@ -21938,7 +21939,9 @@ body .gform_wrapper .gform_footer button {
   height: 100%;
 }
 .sibling-nav__card-title {
-  font-size: var(--fs-400);
+  font-size: var(--fs-200);
+  font-weight: var(--fw-700);
+  text-transform: uppercase;
   display: grid;
   place-content: center;
   padding: 1rem;

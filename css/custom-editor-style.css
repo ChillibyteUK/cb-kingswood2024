@@ -42,6 +42,7 @@
   --fs-800: clamp(2.07rem, calc(1.98rem + 0.45vw), 2.33rem);
   --fs-900: clamp(2.49rem, calc(2.38rem + 0.54vw), 2.80rem);
   */
+  --fs-200: 0.778rem;
   --fs-300: 0.889rem;
   --fs-400: 1rem;
   --fs-450: 1.167rem;

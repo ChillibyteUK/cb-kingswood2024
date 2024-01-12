@@ -16,7 +16,7 @@
         @media (min-width:576px) {
             flex-basis: calc(33.333% - 1rem);
         }
-        @media (min-width:992px) {
+        @media (min-width:1400px) {
             flex-basis: calc(16.666% - 1rem);
         }
         &:hover {
@@ -27,7 +27,9 @@
         }
     }
     &__card-title {
-        font-size: var(--fs-400);
+        font-size: var(--fs-200);
+        font-weight: var(--fw-700);
+        text-transform: uppercase;
         display: grid;
         place-content: center;
         padding: 1rem;
