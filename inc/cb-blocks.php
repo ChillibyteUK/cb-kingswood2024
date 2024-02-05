@@ -21,6 +21,15 @@ function acf_blocks()
             'supports' => array('mode' => false),
         ));
         acf_register_block_type(array(
+            'name'				=> 'cb_text_image',
+            'title'				=> __('CB Text / Image'),
+            'category'			=> 'layout',
+            'icon'				=> 'cover-image',
+            'render_template'	=> 'page-templates/blocks/cb_text_image.php',
+            'mode'	=> 'edit',
+            'supports' => array('mode' => false),
+        ));
+        acf_register_block_type(array(
             'name'				=> 'cb_child-nav',
             'title'				=> __('CB Child Nav'),
             'category'			=> 'layout',
@@ -183,7 +192,8 @@ function modify_core_heading($attributes, $content)
 
 add_filter('acf/load_field/name=door_style', 'populate_door_style_choices');
 
-function populate_door_style_choices($field) {
+function populate_door_style_choices($field)
+{
     // Ensure ACF is loaded
     if (function_exists('get_field')) {
         // Get repeater field data from options page
@@ -208,7 +218,8 @@ function populate_door_style_choices($field) {
 
 add_filter('acf/load_field/name=door_finish', 'populate_door_finish_choices');
 
-function populate_door_finish_choices($field) {
+function populate_door_finish_choices($field)
+{
     // Ensure ACF is loaded
     if (function_exists('get_field')) {
         // Get repeater field data from options page
@@ -233,7 +244,8 @@ function populate_door_finish_choices($field) {
 
 add_filter('acf/load_field/name=door_colour', 'populate_door_colour_choices');
 
-function populate_door_colour_choices($field) {
+function populate_door_colour_choices($field)
+{
     // Ensure ACF is loaded
     if (function_exists('get_field')) {
         // Get repeater field data from options page
