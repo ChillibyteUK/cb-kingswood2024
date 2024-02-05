@@ -117,67 +117,6 @@ a.anchor {
     }
 }
 
-.sidebar {
-    top: calc(var(--h-top) / 2);
-    .active {
-        color: var(--col-secondary-400);
-        &::before {
-            color: var(--col-secondary-400);
-        }
-        a {
-            color: var(--col-secondary-400) !important;
-        }
-    }
-    ul {
-        padding-inline-start: 0;
-        @media (min-width:576px) {
-            columns: 2;
-        }
-        @media (min-width:992px) {
-            margin-bottom: 3rem;
-            columns: 1;
-        }
-    }
-    li {
-        list-style: none;
-        position: relative;
-        line-height: 2.5;
-        font-weight: var(--fw-600);
-        color: var(--col-primary-400) !important;
-        a {
-            color: var(--col-primary-400) !important;
-            &:hover {
-                color: var(--col-secondary-400) !important;
-            }
-        }
-        &::before {
-            content: "\f6d1";
-            font-family: 'font awesome 6 free';
-            font-weight: var(--fw-600);
-            color: var(--col-primary-400);
-            margin-right: 0.25rem;
-        }
-    }
-    @media (min-width:992px) {
-        border-right: 1px solid var(--col-primary-400);
-        padding-right: 1.5rem;
-    }
-}
-.sidebar_cta {
-    margin-top: 1rem;
-    background-color: var(--col-primary-200);
-    padding: 1.5rem 2rem;
-    border-radius: var(--border-sm);
-    max-width: 400px;
-    margin-inline: auto;
-    a {
-        color: #fff;
-        font-weight: var(--fw-600);
-        &:hover {
-            color: var(--col-secondary-400);
-        }
-    }
-}
 
 // show stuff that overflows horizontally
 // * {
