@@ -65,7 +65,7 @@ foreach ($blocks as $block) {
             </div>
         </div>
         <section class="related pb-5">
-            <h3><span>Related</span> Guides</h3>
+            <h3>Related Posts</h3>
             <div class="row g-4">
                 <?php
             $cats = get_the_category();
@@ -84,7 +84,8 @@ while ($r->have_posts()) {
                             alt="" class="blog_card__image">
                         <div class="blog_card__content">
                             <h3 class="blog_card__title">
-                                <?=get_the_title()?></h3>
+                                <?=get_the_title()?>
+                            </h3>
                         </div>
                     </a>
                 </div>
@@ -97,3 +98,4 @@ while ($r->have_posts()) {
 </main>
 <?php
 get_footer();
+?>

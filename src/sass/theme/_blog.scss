@@ -68,3 +68,18 @@
         font-weight: var(--fw-700);
     }
 }
+
+.related {
+    .blog_card {
+        &__image {
+            aspect-ratio: 16 / 9 ;
+            width: 100%;
+            object-fit: cover;
+            object-position: center;
+            margin-bottom: 0.5rem;
+        }
+        &__title {
+            font-size: var(--fs-500);
+        }
+    }
+}

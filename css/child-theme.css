@@ -21638,6 +21638,19 @@ strong, b {
   font-weight: var(--fw-700);
 }
 
+.related .blog_card__image {
+  aspect-ratio: 16/9;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  margin-bottom: 0.5rem;
+}
+.related .blog_card__title {
+  font-size: var(--fs-500);
+}
+
 .fieldset-cf7mls-wrapper p {
   display: none;
 }
