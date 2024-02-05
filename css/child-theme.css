@@ -21629,6 +21629,15 @@ strong, b {
   margin-right: 0.25rem;
 }
 
+.insights-nav {
+  list-style: none;
+  -webkit-padding-start: 0;
+  padding-inline-start: 0;
+}
+.insights-nav .active {
+  font-weight: var(--fw-700);
+}
+
 .fieldset-cf7mls-wrapper p {
   display: none;
 }

@@ -60,3 +60,11 @@
         }
     }
 }
+
+.insights-nav {
+    list-style: none;
+    padding-inline-start: 0;
+    .active {
+        font-weight: var(--fw-700);
+    }
+}
