@@ -102,6 +102,16 @@ function acf_blocks()
             'supports' => array('mode' => false),
         ));
 
+        acf_register_block_type(array(
+            'name'				=> 'cb_cat_gallery',
+            'title'				=> __('CB Project Gallery'),
+            'category'			=> 'layout',
+            'icon'				=> 'cover-image',
+            'render_template'	=> 'page-templates/blocks/cb_cat_gallery.php',
+            'mode'	=> 'edit',
+            'supports' => array('mode' => false),
+        ));
+
         // DOORS
         acf_register_block_type(array(
             'name'				=> 'cb_door_style',

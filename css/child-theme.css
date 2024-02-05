@@ -22373,6 +22373,39 @@ body .gform_wrapper .gform_footer button {
   cursor: pointer;
 }
 
+.gallery__grid {
+  display: grid;
+  gap: 0.5rem;
+}
+@media (min-width: 576px) {
+  .gallery__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 768px) {
+  .gallery__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 992px) {
+  .gallery__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (min-width: 1200px) {
+  .gallery__grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+.gallery__image {
+  aspect-ratio: 16/9;
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+}
+
 .options_panel__heading {
   font-weight: var(--fw-700);
   text-transform: uppercase;
