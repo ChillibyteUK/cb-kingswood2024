@@ -77,14 +77,20 @@ while (have_posts()) {
                     href="<?=get_the_permalink(get_the_ID())?>">
                     <img class="index_blog__image" src="<?=$img?>">
                     <div class="index_blog__content">
-                        <h2 class="fs-4 index_blog__title pb-2">
+                        <h2 class="index_blog__title pb-2">
                             <?=get_the_title(get_the_ID())?>
                         </h2>
-                        <div class="index_blog__meta">
-                            <div class="index_blog__date">
-                                <?=get_the_date('jS F, Y', get_the_ID())?>
+                        <div class="d-flex flex-column">
+                            <div class="index_blog__read">
+                                <?=estimate_reading_time_in_minutes(get_the_content(null, false, get_the_ID()), 200, true, false)?>m
+                                read
                             </div>
-                            <div class="readmore">Read more</div>
+                            <div class="index_blog__meta">
+                                <div class="index_blog__date">
+                                    <?=get_the_date('jS F, Y', get_the_ID())?>
+                                </div>
+                                <div class="readmore">Read more</div>
+                            </div>
                         </div>
                     </div>
                 </a>
