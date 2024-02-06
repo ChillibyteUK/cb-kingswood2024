@@ -1,6 +1,7 @@
 <?php
 $h = get_field('level') ?? 'h2';
 $classes = $block['className'] ?? 'py-4';
+$stylee = get_field('style_content') == 'Yes' ?: null;
 ?>
 <section class="centre_para <?=$classes?>">
     <div class="container-xl">
@@ -18,7 +19,7 @@ $classes = $block['className'] ?? 'py-4';
         <?php
         }
         ?>
-        <div class="text-center max-ch">
+        <div class="text-center max-ch <?=$stylee?>">
             <?=get_field('content')?>
         </div>
     </div>

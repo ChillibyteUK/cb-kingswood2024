@@ -21317,6 +21317,15 @@ strong, b {
   margin-bottom: 0.25rem;
 }
 
+.ff-intro {
+  font-family: var(--ff-headings);
+  font-size: var(--fs-500);
+  font-weight: var(--fw-400);
+  font-style: italic;
+  line-height: 120%;
+  color: var(--col-gold-400);
+}
+
 .has-primary-200-color {
   color: var(--col-primary-200) !important;
 }
