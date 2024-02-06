@@ -21302,6 +21302,11 @@ strong, b {
   font-size: var(--fs-200);
 }
 
+.max-ch {
+  max-width: 70ch;
+  margin-inline: auto;
+}
+
 .has-primary-200-color {
   color: var(--col-primary-200) !important;
 }

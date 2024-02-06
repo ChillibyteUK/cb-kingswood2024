@@ -112,6 +112,16 @@ function acf_blocks()
         ));
 
         acf_register_block_type(array(
+            'name'				=> 'cb_centre_para',
+            'title'				=> __('CB Centre Para (LP)'),
+            'category'			=> 'layout',
+            'icon'				=> 'cover-image',
+            'render_template'	=> 'page-templates/blocks/cb_centre_para.php',
+            'mode'	=> 'edit',
+            'supports' => array('mode' => false),
+        ));
+
+        acf_register_block_type(array(
             'name'				=> 'cb_cat_gallery',
             'title'				=> __('CB Project Gallery'),
             'category'			=> 'layout',
