@@ -23,3 +23,12 @@
         object-position: center;
     }
 }
+
+.navlist {
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding-block: 1rem;
+    text-transform: uppercase;
+}
