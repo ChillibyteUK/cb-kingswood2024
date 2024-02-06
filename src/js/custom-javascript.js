@@ -7,9 +7,5 @@ AOS.init({
 
 const lightbox = GLightbox();
 
-
 // (function(){
-
-
-  
 // })();
