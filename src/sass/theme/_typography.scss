@@ -120,3 +120,13 @@ strong, b {
     max-width: 70ch;
     margin-inline: auto;
 }
+
+.pre_title {
+    font-family: var(--ff-body);
+    text-transform: uppercase;
+    text-align: center;
+    font-size: var(--fs-300);
+    font-weight: var(--fw-700);
+    color: var(--col-green-400);
+    margin-bottom: 0.25rem;
+}
