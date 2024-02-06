@@ -27,7 +27,7 @@ $r = random_str(8);
             ?>
             <a href="<?=wp_get_attachment_image_url(get_the_ID(), 'full')?>"
                 class="glightbox" data-gallery="gallery<?=$r?>">
-                <img src="<?=wp_get_attachment_image_url(get_the_ID(), 'full')?>"
+                <img src="<?=wp_get_attachment_image_url(get_the_ID(), 'medium')?>"
                     alt="image" class="gallery__image" />
             </a>
             <?php
