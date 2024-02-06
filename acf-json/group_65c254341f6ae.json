@@ -1,10 +1,10 @@
 {
-    "key": "group_657c2d4b6336f",
-    "title": "CB Intro",
+    "key": "group_65c254341f6ae",
+    "title": "CB Intro - Wide",
     "fields": [
         {
-            "key": "field_657c2d4c4f1f2",
-            "label": "CB Intro",
+            "key": "field_65c2543438073",
+            "label": "CB Intro - Wide",
             "name": "",
             "aria-label": "",
             "type": "message",
@@ -21,7 +21,7 @@
             "esc_html": 0
         },
         {
-            "key": "field_657c2d638681d",
+            "key": "field_65c254343baa8",
             "label": "Title",
             "name": "title",
             "aria-label": "",
@@ -41,7 +41,7 @@
             "append": ""
         },
         {
-            "key": "field_657c2d6a8681e",
+            "key": "field_65c254343f770",
             "label": "Content",
             "name": "content",
             "aria-label": "",
@@ -61,7 +61,7 @@
             "delay": 0
         },
         {
-            "key": "field_657c493ea41cf",
+            "key": "field_65c2543443285",
             "label": "Has overlay?",
             "name": "has_overlay",
             "aria-label": "",
@@ -86,7 +86,7 @@
             "custom_choice_button_text": "Add new choice"
         },
         {
-            "key": "field_657c4a4253148",
+            "key": "field_65c2543446cc1",
             "label": "Has crown?",
             "name": "has_crown",
             "aria-label": "",
@@ -111,7 +111,7 @@
             "custom_choice_button_text": "Add new choice"
         },
         {
-            "key": "field_657c686558dbe",
+            "key": "field_65c254344a711",
             "label": "Align Title",
             "name": "title_align",
             "aria-label": "",
@@ -141,7 +141,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/cb-intro"
+                "value": "acf\/cb-intro-wide"
             }
         ]
     ],
@@ -154,5 +154,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1707234352
+    "modified": 1707234377
 }

@@ -21,6 +21,15 @@ function acf_blocks()
             'supports' => array('mode' => false),
         ));
         acf_register_block_type(array(
+            'name'				=> 'cb_intro-wide',
+            'title'				=> __('CB Intro - Wide'),
+            'category'			=> 'layout',
+            'icon'				=> 'cover-image',
+            'render_template'	=> 'page-templates/blocks/cb_intro-wide.php',
+            'mode'	=> 'edit',
+            'supports' => array('mode' => false),
+        ));
+        acf_register_block_type(array(
             'name'				=> 'cb_text_image',
             'title'				=> __('CB Text / Image'),
             'category'			=> 'layout',
