@@ -1,7 +1,7 @@
 <?php
 $h = get_field('level') ?? 'h2';
 $classes = $block['className'] ?? 'py-4';
-$stylee = get_field('style_content')[0] == 'Yes' ?: null;
+$stylee = get_field('style_content')[0] == 'Yes' ? 'ff-intro': null;
 ?>
 <section class="centre_para <?=$classes?>">
     <div class="container-xl">
