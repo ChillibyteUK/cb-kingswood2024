@@ -9300,7 +9300,8 @@
 	AOS.init({
 	  duration: 2000,
 	  once: true
-	}); // (function(){
+	});
+	GLightbox(); // (function(){
 	// })();
 
 	exports.Alert = alert;

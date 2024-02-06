@@ -37,6 +37,7 @@ $r = random_str(8);
     </div>
 </section>
 <?php
+/*
 add_action('wp_footer', function () {
     ?>
 <script type="text/javascript">
@@ -44,4 +45,5 @@ add_action('wp_footer', function () {
 </script>
 <?php
 }, 9999);
+*/
 ?>

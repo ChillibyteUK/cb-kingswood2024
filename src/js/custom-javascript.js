@@ -5,6 +5,8 @@ AOS.init({
   once: true,
 });
 
+const lightbox = GLightbox();
+
 
 // (function(){
 
