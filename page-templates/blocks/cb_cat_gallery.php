@@ -19,7 +19,7 @@ $r = random_str(8);
 
 if (get_field('id') ?? null) {
     ?>
-<a id="<?=get_field('id')?>"></a>
+<a class="anchor" id="<?=get_field('id')?>"></a>
     <?php
 }
 ?>
