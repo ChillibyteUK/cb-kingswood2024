@@ -1,5 +1,5 @@
 <?php
-$classes = $block['className'] ?? 'py-5';
+$classes = $block['className'] ?? 'pb-5';
 $cat = get_field('project_category');
 
 $q = new WP_Query(array(
@@ -18,7 +18,7 @@ $q = new WP_Query(array(
 $r = random_str(8);
 
 ?>
-<section class="gallery">
+<section class="gallery <?=$classes?>">
     <div class="container-xl">
         <div class="gallery__grid">
             <?php
