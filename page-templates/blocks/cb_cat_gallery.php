@@ -22,14 +22,16 @@ if (get_field('id') ?? null) {
 <a id="#<?=get_field('id')?>"></a>
     <?php
 }
-if (get_field('title') ?? null) {
-    ?>
-<h2 class="h3"><?=get_field('title')?></h2>
-    <?php
-}
 ?>
 <section class="gallery <?=$classes?>">
     <div class="container-xl">
+        <?php
+        if (get_field('title') ?? null) {
+            ?>
+        <h2 class="h3"><?=get_field('title')?></h2>
+            <?php
+        }
+        ?>        
         <div class="gallery__grid">
             <?php
         while ($q->have_posts()) {
