@@ -21465,6 +21465,15 @@ strong, b {
   justify-content: space-between;
 }
 
+.mega-menu-item .image {
+  width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+  aspect-ratio: 16/9;
+}
+
 .pre-footer {
   height: var(--topbit-height);
   background-image: url(../img/bg-paisley.svg);
