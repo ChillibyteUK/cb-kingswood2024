@@ -1,4 +1,7 @@
-<section class="faqs py-5">
+<?php
+$classes = $block['className'] ?? 'py-5';
+?>
+<section class="faqs <?=$classes?>">
     <div class="container-xl">
         <h2 class="mb-4"><?=get_field('title')?>
         </h2>
