@@ -1,0 +1,32 @@
+.faqs  {
+    .accordion {
+        display: grid;
+        row-gap: 1rem;
+    }
+    .accordion-head {
+        display: grid;
+        grid-template-columns: minmax(0, 1fr) min-content;
+        position: relative;
+        padding: 0.5rem 0;
+        cursor: pointer;
+        font-weight: 300;
+        font-size: 1.2rem;
+        font-weight: var(--fw-600);
+        & > div {
+            align-self: center;
+        }
+        &::after {
+            content: "\f107";
+            display: block;
+            position: relative;
+            align-self: center;
+            transition: all 0.3s ease;
+            font-family: "Font Awesome 6 Free";
+            font-weight: 600;
+            color: inherit;
+        }
+    }
+    .accordion-collapse.collapsed.accordion-head::after {
+        transform: rotate(-90deg);
+    }
+}

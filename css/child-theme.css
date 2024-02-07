@@ -22493,6 +22493,38 @@ body .gform_wrapper .gform_footer button {
   object-position: center;
 }
 
+.faqs .accordion {
+  display: grid;
+  row-gap: 1rem;
+}
+.faqs .accordion-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) -webkit-min-content;
+  grid-template-columns: minmax(0, 1fr) min-content;
+  position: relative;
+  padding: 0.5rem 0;
+  cursor: pointer;
+  font-weight: 300;
+  font-size: 1.2rem;
+  font-weight: var(--fw-600);
+}
+.faqs .accordion-head > div {
+  align-self: center;
+}
+.faqs .accordion-head::after {
+  content: "\f107";
+  display: block;
+  position: relative;
+  align-self: center;
+  transition: all 0.3s ease;
+  font-family: "Font Awesome 6 Free";
+  font-weight: 600;
+  color: inherit;
+}
+.faqs .accordion-collapse.collapsed.accordion-head::after {
+  transform: rotate(-90deg);
+}
+
 .options_panel__heading {
   font-weight: var(--fw-700);
   text-transform: uppercase;
