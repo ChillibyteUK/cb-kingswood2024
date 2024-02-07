@@ -52,7 +52,7 @@
             <?php
             if(get_field('cta_1')) {
                 ?>
-<a href="/book-appointment/" class="hero__cta hero__cta--green"><i class="fa-regular fa-calendar-days"></i> Book <span>Appointment</span></a>
+<a href="/contact/book-appointment/" class="hero__cta hero__cta--green"><i class="fa-regular fa-calendar-days"></i> Book <span>Appointment</span></a>
                 <?php
             }
             if(get_field('cta_2')) {
