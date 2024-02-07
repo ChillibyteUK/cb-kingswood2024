@@ -130,6 +130,15 @@ function acf_blocks()
             'mode'	=> 'edit',
             'supports' => array('mode' => false),
         ));
+        acf_register_block_type(array(
+            'name'				=> 'cb_image_cols',
+            'title'				=> __('CB Image Cols'),
+            'category'			=> 'layout',
+            'icon'				=> 'cover-image',
+            'render_template'	=> 'page-templates/blocks/cb_image_cols.php',
+            'mode'	=> 'edit',
+            'supports' => array('mode' => false),
+        ));
 
         // DOORS
         acf_register_block_type(array(

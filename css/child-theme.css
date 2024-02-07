@@ -22439,6 +22439,26 @@ body .gform_wrapper .gform_footer button {
   text-transform: uppercase;
 }
 
+.image_cols__grid {
+  display: grid;
+  gap: 1rem;
+}
+@media (min-width: 992px) {
+  .image_cols__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.image_cols img {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 16/9;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: center;
+  object-position: center;
+}
+
 .options_panel__heading {
   font-weight: var(--fw-700);
   text-transform: uppercase;
