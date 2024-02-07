@@ -22169,7 +22169,7 @@ body .gform_wrapper .gform_footer button {
 .nav_cards__card {
   display: flex;
   flex-direction: column;
-  flex-basis: calc(25% - 1rem);
+  flex-basis: 25%;
   width: 100%;
 }
 .nav_cards__image {
@@ -22473,8 +22473,13 @@ body .gform_wrapper .gform_footer button {
   gap: 1rem;
 }
 @media (min-width: 992px) {
-  .image_cols__grid {
+  .image_cols__grid.image_cols__grid--three {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (min-width: 992px) {
+  .image_cols__grid.image_cols__grid--four {
+    grid-template-columns: repeat(4, 1fr);
   }
 }
 .image_cols img {

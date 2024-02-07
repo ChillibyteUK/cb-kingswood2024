@@ -1,9 +1,10 @@
 <?php
+$cols = get_field('num_cols') == '4' ? 'image_cols__grid--four' : 'image_cols__grid--three';
 $classes = $block['className'] ?? 'py-5';
 ?>
 <section class="image_cols <?=$classes?>">
     <div class="container-xl">
-        <div class="image_cols__grid">
+        <div class="image_cols__grid <?=$cols?>">
         <?php
         $r = random_str(4);
         foreach (get_field('images') as $i) {

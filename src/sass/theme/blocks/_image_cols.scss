@@ -2,8 +2,16 @@
     &__grid {
         display: grid;
         gap: 1rem;
-        @media (min-width:992px) {
-            grid-template-columns: repeat(3,1fr);
+
+        &.image_cols__grid--three {
+            @media (min-width:992px) {
+                grid-template-columns: repeat(3,1fr);
+            }
+        }
+        &.image_cols__grid--four {
+            @media (min-width:992px) {
+                grid-template-columns: repeat(4,1fr);
+            }
         }
     }
     img {
