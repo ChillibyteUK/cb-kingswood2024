@@ -21909,6 +21909,7 @@ body .gform_wrapper .gform_footer button {
 }
 .hero__title {
   margin-bottom: 1rem;
+  text-wrap: balance;
 }
 .hero__content {
   max-width: 70ch;
