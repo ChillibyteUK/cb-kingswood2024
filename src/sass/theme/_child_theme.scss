@@ -16,9 +16,12 @@ body {
 }
 
 a:not(.btn) {
-    color: var(--col-primary-900);
+    color: var(--col-secondary-400);
     font-weight: var(--fw-600);
     text-decoration: none;
+    &:hover {
+        color: var(--col-secondary-900);
+    }
 }
 a {
     text-decoration: none;
