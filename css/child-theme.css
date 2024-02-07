@@ -21267,6 +21267,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, .h99 {
   margin-bottom: 0.5rem;
   font-weight: var(--fw-500);
   letter-spacing: -1px;
+  line-height: 1.1;
 }
 
 h1, .h1 {
@@ -22288,6 +22289,23 @@ body .gform_wrapper .gform_footer button {
 }
 .wide_cta__button:hover {
   background-color: var(--col-gold-600);
+}
+
+.image_cta {
+  background-size: cover;
+  background-position: center;
+  min-height: 400px;
+  display: grid;
+  place-content: center;
+}
+.image_cta__inner {
+  background-color: hsl(var(--hsl-brown-400)/0.4);
+  padding: 1rem 2rem;
+  text-align: center;
+  color: var(--col-light);
+}
+.image_cta__inner .h4 {
+  font-style: italic;
 }
 
 .features {

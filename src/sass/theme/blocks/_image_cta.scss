@@ -1,0 +1,16 @@
+.image_cta {
+    background-size: cover;
+    background-position: center;
+    min-height: 400px;
+    display: grid;
+    place-content: center;
+    &__inner {
+        background-color: hsl(var(--hsl-brown-400) / 0.4);
+        padding: 1rem 2rem;
+        text-align: center;
+        color: var(--col-light);
+        .h4 {
+            font-style: italic;
+        }
+    }
+}
