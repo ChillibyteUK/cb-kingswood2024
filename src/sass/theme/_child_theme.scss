@@ -20,7 +20,7 @@ a:not(.btn) {
     font-weight: var(--fw-600);
     text-decoration: none;
     &:hover {
-        color: var(--col-secondary-900);
+        color: var(--col-peony-400);
     }
 }
 a {
@@ -28,7 +28,7 @@ a {
     transition: color var(--transition);
     color: var(--col-secondary-400);
     &:hover {
-        color: var(--col-secondary-900);
+        color: var(--col-peony-400);
     }
 }
 
