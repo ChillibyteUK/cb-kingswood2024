@@ -23,8 +23,9 @@ a:not(.btn) {
 a {
     text-decoration: none;
     transition: color var(--transition);
+    color: var(--col-secondary-400);
     &:hover {
-        color: var(--col-secondary-400);
+        color: var(--col-secondary-900);
     }
 }
 

@@ -22576,9 +22576,10 @@ a:not(.btn) {
 a {
   text-decoration: none;
   transition: color var(--transition);
+  color: var(--col-secondary-400);
 }
 a:hover {
-  color: var(--col-secondary-400);
+  color: var(--col-secondary-900);
 }
 
 a.noline {
