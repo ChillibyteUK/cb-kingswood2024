@@ -1,4 +1,7 @@
-<section class="map">
+<?php
+$classes = $block['className'] ?? 'py-5';
+?>
+<section class="map <?=$classes?>">
     <div class="container-xl">
         <div class="row g-4">
             <div class="col-lg-6 col-xl-4">
