@@ -17,6 +17,7 @@
                             <li><span class="fa-li"><i class="fa-solid fa-calendar"></i></span> <?=get_field('opening_hours','options')?></li>
                         </ul>
                     </div>
+                </div>
             </div>
             <div class="col-lg-6 col-xl-8">
                 <iframe src="<?=get_field('maps_url','options')?>" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
