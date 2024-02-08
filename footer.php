@@ -48,7 +48,7 @@ defined('ABSPATH') || exit;
                     </div>
                     <div class="col-md-6 col-lg-4 order-6">
                         <div class="footer__heading">Areas Covered</div>
-                        <div class="mb-4">We cover all areas in East and West Sussex, including:  Horsham, East Grinstead, Eastbourne, Lewes, Brighton, Crawley, Bognor Regis, Haywards Heath and Worthing. We also cover Surrey, Kent and London.</div>
+                        <div class="mb-4"><?=get_field('footer_locations','options')?></div>
                         <div class="footer__badges">
                             <img src="<?=get_stylesheet_directory_uri()?>/img/makeitsafe.svg" alt="">
                             <img src="<?=get_stylesheet_directory_uri()?>/img/bbsa.svg" alt="">
