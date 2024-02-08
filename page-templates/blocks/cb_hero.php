@@ -1,5 +1,5 @@
 <section class="hero">
-    <div id="heroCarousel" class="carousel slide" data-bs-interval="4000" data-bs-ride="carousel">
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-interval="4000" data-bs-ride="carousel">
         <div class="carousel-inner">
             <?php
             $active = 'active';
