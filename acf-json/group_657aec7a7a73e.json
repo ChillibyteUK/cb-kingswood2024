@@ -79,6 +79,26 @@
             "new_lines": "br"
         },
         {
+            "key": "field_65c4a5ea7ee0a",
+            "label": "Opening Hours",
+            "name": "opening_hours",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": 4,
+            "placeholder": "",
+            "new_lines": "br"
+        },
+        {
             "key": "field_657b18b7839ee",
             "label": "Social",
             "name": "social",
@@ -175,6 +195,26 @@
                     "append": ""
                 }
             ]
+        },
+        {
+            "key": "field_65c4a6057ee0b",
+            "label": "Maps URL",
+            "name": "maps_url",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
         },
         {
             "key": "field_657c53e83f345",
@@ -536,5 +576,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1705068403
+    "modified": 1707386385
 }
