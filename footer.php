@@ -35,7 +35,7 @@ defined('ABSPATH') || exit;
                     <div class="col-md-6 col-lg-4 order-5 order-lg-3">
                         <div class="footer__heading">Newsletter Signup</div>
                         <div>Receive our latest offers and deals in accordance with our <a href="/privacy/">privacy policy</a></div>
-                        MC FORM
+                        <?=do_shortcode('[mc4wp_form id=2053]')?>
                     </div>
                     <div class="col-md-6 col-lg-4 order-4">
                         <div class="footer__heading">Follow Us</div>
