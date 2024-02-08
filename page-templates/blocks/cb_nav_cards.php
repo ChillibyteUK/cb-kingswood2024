@@ -1,4 +1,7 @@
-<section class="nav_cards">
+<?php
+$classes = $block['className'] ?? null;
+?>
+<section class="nav_cards <?=$classes?>">
     <div class="container-xl">
         <div class="nav_cards__grid">
             <?php
