@@ -22506,8 +22506,18 @@ body .gform_wrapper .gform_footer button {
   aspect-ratio: 16/9;
   -o-object-fit: cover;
   object-fit: cover;
+}
+.image_cols img.image_cols--center {
   -o-object-position: center;
   object-position: center;
+}
+.image_cols img.image_cols--top {
+  -o-object-position: top;
+  object-position: top;
+}
+.image_cols img.image_cols--bottom {
+  -o-object-position: bottom;
+  object-position: bottom;
 }
 
 .faqs .accordion {

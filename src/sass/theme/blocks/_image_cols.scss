@@ -20,6 +20,14 @@
         width: 100%;
         aspect-ratio: 16 / 9;
         object-fit: cover;
-        object-position: center;
+        &.image_cols--center {
+            object-position: center;
+        }
+        &.image_cols--top {
+            object-position: top;
+        }
+        &.image_cols--bottom {
+            object-position: bottom;
+        }
     }
 }
