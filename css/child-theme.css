@@ -21580,6 +21580,22 @@ strong, b {
 .footer .colophon .cb:hover {
   opacity: 0.8;
 }
+.footer .mc4wp-form-fields input[type=email] {
+  width: 100%;
+  display: block;
+  margin-block: 0.5rem 0.25rem;
+  border: 1px solid var(--col-grey-700);
+  padding: 0.25rem 0.5rem;
+}
+.footer .mc4wp-form-fields input[type=submit] {
+  background-color: var(--col-green-400);
+  display: block;
+  width: 100%;
+  border: 0;
+  text-transform: uppercase;
+  padding: 0.25rem 1rem;
+  letter-spacing: 1px;
+}
 
 .button {
   display: block;
