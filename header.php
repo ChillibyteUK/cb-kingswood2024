@@ -76,10 +76,10 @@ wp_head();
     <script type="application/ld+json">
         {
             "@context": "http://schema.org",
-            "@type": "Organization",
+            "@type": "LocalBusiness",
             "name": "Kingswood at Home Ltd",
             "url": "https://www.kingswoodathome.co.uk/",
-            "logo": "https://www.kingswoodathome.co.uk/wp-content/theme/cb-kingswood2024/img/kingswood-logo.png",
+            "logo": "https://www.kingswoodathome.co.uk/wp-content/themes/cb-kingswood2024/img/kingswood-wordmark.svg",
             "description": "Wardrobes, Shutters & Blinds - Tailor Made & Installed",
             "address": {
                 "@type": "PostalAddress",
@@ -90,7 +90,13 @@ wp_head();
                 "addressCountry": "UK"
             },
             "telephone": "+44 (0) 800 470 1112",
-            "email": "info@kingswoodathome.co.uk"
+            "email": "info@kingswoodathome.co.uk",
+            "sameAs": [ 
+            "https://www.instagram.com/kingswoodathome/",
+            "https://www.facebook.com/kingswoodathome/",
+            "https://twitter.com/kingswoodathome",
+            "https://www.pinterest.co.uk/kingswoodshuttersuk/"
+            ]
         }
     </script>
 </head>
