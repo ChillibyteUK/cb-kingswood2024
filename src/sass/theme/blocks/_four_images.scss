@@ -11,7 +11,7 @@
             'four';
         @media (min-width:576px) {
             grid-template-columns: repeat(3,1fr);
-            grid-template-rows: 3fr, 1fr;
+            grid-template-rows: 3fr 1fr;
             grid-template-areas:
                 'one one one'
                 'two three four';
