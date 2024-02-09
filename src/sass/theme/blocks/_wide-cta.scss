@@ -19,19 +19,22 @@
         color: white;
     }
     &__pre-title {
-        text-align: end;
         font-size: var(--fs-500);
         letter-spacing: 3px;
         text-transform: uppercase;
     }
     &__title {
-        text-align: end;
         font-size: calc(var(--fs-900) * 1.2);
         font-weight: var(--fw-400);
         line-height: 110%;
         font-family: var(--ff-headings);
         // font-style: italic;
         letter-spacing: -0.5px;
+    }
+    @media (min-width:992px) {
+        &__pre-title, &__title {
+            text-align: end;
+        }
     }
     &__content {
         font-size: var(--fs-500);
