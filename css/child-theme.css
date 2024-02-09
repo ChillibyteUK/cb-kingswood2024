@@ -22379,8 +22379,13 @@ body .gform_wrapper .gform_footer button {
 }
 .features img {
   aspect-ratio: 1;
-  width: 130px;
+  width: 70px;
   margin-bottom: 0.5rem;
+}
+@media (min-width: 992px) {
+  .features img {
+    width: 130px;
+  }
 }
 .features__pre-title {
   font-size: var(--fs-300);

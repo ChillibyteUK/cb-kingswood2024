@@ -22,7 +22,10 @@
     }
     img {
         aspect-ratio: 1;
-        width: 130px;
+        width: 70px;
+        @media (min-width:992px) {
+            width: 130px;
+        }
         margin-bottom: 0.5rem;
     }
     &__pre-title {
