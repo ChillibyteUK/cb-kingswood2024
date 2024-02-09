@@ -22113,7 +22113,7 @@ body .gform_wrapper .gform_footer button {
   width: 100%;
   flex-basis: calc(50% - 1rem);
 }
-@media (min-width: 576px) {
+@media (min-width: 758px) {
   .sibling-nav__card {
     flex-basis: calc(33.333% - 1rem);
   }
