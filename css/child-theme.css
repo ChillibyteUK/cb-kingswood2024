@@ -22186,12 +22186,12 @@ body .gform_wrapper .gform_footer button {
 .nav_cards__grid {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
   gap: 1rem;
 }
 .nav_cards__card {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   width: 100%;
 }
 @media (min-width: 992px) {

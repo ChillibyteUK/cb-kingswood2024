@@ -3,12 +3,12 @@
     &__grid {
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-around;
         gap: 1rem;
     }
     &__card {
         display: flex;
         flex-direction: column;
-        justify-content: space-around;
         @media (min-width:992px) {
             flex-basis: calc(25% - 1rem);
         }
