@@ -1,6 +1,9 @@
 .hero {
     
-    --_c-height: 500px;
+    --_c-height: 600px;
+    @media (min-width:992px) {
+        --_c-height: 500px;
+    }
 
     height: var(--_c-height);
     position: relative;

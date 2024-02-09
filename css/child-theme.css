@@ -21884,10 +21884,15 @@ body .gform_wrapper .gform_footer button {
 }
 */
 .hero {
-  --_c-height: 500px;
+  --_c-height: 600px;
   height: var(--_c-height);
   position: relative;
   isolation: isolate;
+}
+@media (min-width: 992px) {
+  .hero {
+    --_c-height: 500px;
+  }
 }
 .hero #heroCarousel {
   position: absolute;
