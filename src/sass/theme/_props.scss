@@ -73,7 +73,7 @@ $col-grey: #FFF0F0;
     --fs-600: 1.667rem; // 30px;
     --fs-700: 2rem; // 36px;
     --fs-800: 2.667rem; // 48px;
-    --fs-900: 4rem; // 60px;
+    --fs-900: clamp(3rem, 1.75rem + 4vw, 4rem); // 4rem; // 60px;
 
     --transition: 0.2s ease-out;
 
