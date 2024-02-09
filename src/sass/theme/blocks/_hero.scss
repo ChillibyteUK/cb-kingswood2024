@@ -67,7 +67,7 @@
     &__cta {
         font-size: var(--fs-300);
         width: 100%;
-        @media (min-width:992px) {
+        @media (min-width:576px) {
             width: 250px;
         }
         padding: 0.5rem 1rem;

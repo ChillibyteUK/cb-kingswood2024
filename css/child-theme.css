@@ -21953,7 +21953,7 @@ body .gform_wrapper .gform_footer button {
   letter-spacing: 1px;
   transition: background-color var(--transition);
 }
-@media (min-width: 992px) {
+@media (min-width: 576px) {
   .hero__cta {
     width: 250px;
   }
