@@ -22762,6 +22762,13 @@ a.anchor {
   margin-right: 0.75rem;
 }
 
+.gform_wrapper.gravity-theme .gform_footer button {
+  border: 0;
+}
+.gform_wrapper.gravity-theme .gform_footer button span {
+  font-weight: var(--fw-400);
+}
+
 /*
 var all = document.getElementsByTagName("*"), i = 0, rect, docWidth = document.documentElement.offsetWidth;
 for (; i < all.length; i++) {

@@ -122,6 +122,13 @@ a.anchor {
 }
 
 
+.gform_wrapper.gravity-theme .gform_footer button {
+    border: 0;
+    span {
+        font-weight: var(--fw-400);
+    }
+}
+
 // show stuff that overflows horizontally
 // * {
 //     outline: 1px solid #f00 !important;
