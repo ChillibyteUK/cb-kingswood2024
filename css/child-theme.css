@@ -21398,8 +21398,12 @@ strong, b {
 }
 
 #preNav {
-  border-bottom: 1px solid var(--col-brown-400);
   background-color: white;
+}
+@media (min-width: 992px) {
+  #preNav {
+    border-bottom: 1px solid var(--col-brown-400);
+  }
 }
 #preNav .container-xl {
   display: flex;

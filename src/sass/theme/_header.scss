@@ -37,7 +37,9 @@
 }
 
 #preNav {
-    border-bottom: 1px solid var(--col-brown-400);
+    @media (min-width:992px) {
+        border-bottom: 1px solid var(--col-brown-400);
+    }
     background-color: white;
     .container-xl {
         display: flex;

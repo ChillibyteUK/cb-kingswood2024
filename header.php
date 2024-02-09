@@ -19,20 +19,6 @@ session_start();
         charset="<?php bloginfo('charset'); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, minimum-scale=1">
     <link rel="stylesheet" href="https://use.typekit.net/uny4fbv.css">
-
-<!-- 
-    <link rel="preload"
-        href="<?=get_stylesheet_directory_uri()?>/fonts/noto-serif-display-v24-latin-600italic.woff2"
-        as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload"
-        href="<?=get_stylesheet_directory_uri()?>/fonts/noto-serif-display-v24-latin-italic.woff2"
-        as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload"
-        href="<?=get_stylesheet_directory_uri()?>/fonts/noto-serif-display-v24-latin-regular.woff2"
-        as="font" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload"
-        href="<?=get_stylesheet_directory_uri()?>/fonts/roboto-v30-latin-regular.woff2"
-        as="font" type="font/woff2" crossorigin="anonymous"> -->
     <?php
 if (get_field('ga_property', 'options')) {
     ?>
@@ -91,24 +77,22 @@ wp_head();
         {
             "@context": "http://schema.org",
             "@type": "Organization",
-            "name": "---",
+            "name": "Kingswood at Home Ltd",
             "url": "https://www.kingswoodathome.co.uk/",
             "logo": "https://www.kingswoodathome.co.uk/wp-content/theme/cb-kingswood2024/img/kingswood-logo.png",
-            "description": "...",
+            "description": "Wardrobes, Shutters & Blinds - Tailor Made & Installed",
             "address": {
                 "@type": "PostalAddress",
-                "streetAddress": "---",
-                "addressLocality": "---",
-                "addressRegion": "---",
-                "postalCode": "--- ---",
+                "streetAddress": "Unit 32, Henfield Business Park, Shoreham Road",
+                "addressLocality": "Henfield",
+                "addressRegion": "West Sussex",
+                "postalCode": "BN5 9SL",
                 "addressCountry": "UK"
             },
-            "telephone": "+44 (0) ---- ------",
-            "email": "hello@kingswoodathome.co.uk"
-        }
+            "telephone": "+44 (0) 800 470 1112",
+            "email": "info@kingswoodathome.co.uk"
         }
     </script>
-
 </head>
 
 <body <?php body_class(); ?>
@@ -119,9 +103,10 @@ do_action('wp_body_open');
     <div class="topbit"></div>
     <div id="theNav">
         <div id="preNav">
-            <div class="container-xl" >
+            <div class="container-xl">
                 <a href="/" class="logo" aria-label="Home"></a>
-                <span class="d-none d-lg-block contact">Call to request an appointment <strong><?=do_shortcode('[contact_phone]')?></strong></span>
+                <span class="d-none d-lg-block contact">Call to request an appointment
+                    <strong><?=do_shortcode('[contact_phone]')?></strong></span>
                 <div class="d-none d-lg-flex contact">
                     <a href="/contact/book-appointment/" class="button button--sm">Book an <span>Appointment</span></a>
                     <a href="/request-a-brochure/" class="button button--sm">Request a <span>Brochure</span></a>
@@ -129,8 +114,9 @@ do_action('wp_body_open');
                 <div class="button-container text-end d-flex d-lg-none align-items-center justify-content-between">
                     <?=do_shortcode('[contact_phone_icon]')?>
                     <?=do_shortcode('[contact_email_icon]')?>
-                    <button class="navbar-toggle collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbar"
-                        aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <button class="navbar-toggle collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false"
+                        aria-label="Toggle navigation">
                     </button>
                 </div>
             </div>
