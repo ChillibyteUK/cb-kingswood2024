@@ -21940,17 +21940,23 @@ body .gform_wrapper .gform_footer button {
 }
 .hero__ctas {
   display: flex;
+  flex-wrap: wrap;
   gap: 1rem;
 }
 .hero__cta {
   font-size: var(--fs-300);
-  width: 250px;
+  width: 100%;
   padding: 0.5rem 1rem;
   border: 2px solid white;
   color: white !important;
   text-transform: uppercase;
   letter-spacing: 1px;
   transition: background-color var(--transition);
+}
+@media (min-width: 992px) {
+  .hero__cta {
+    width: 250px;
+  }
 }
 .hero__cta span {
   font-weight: var(--fw-700);
