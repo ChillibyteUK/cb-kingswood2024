@@ -21438,6 +21438,10 @@ strong, b {
   font-size: var(--fs-300);
   font-weight: var(--fw-400);
 }
+#preNav .contact span > * {
+  width: 40px;
+  text-align: center;
+}
 #preNav .button-container {
   width: 130px;
   justify-self: end;
