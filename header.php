@@ -111,8 +111,10 @@ do_action('wp_body_open');
         <div id="preNav">
             <div class="container-xl">
                 <a href="/" class="logo" aria-label="Home"></a>
-                <span class="d-none d-lg-block contact">Call to request an appointment
-                    <strong><?=do_shortcode('[contact_phone]')?></strong></span>
+                <span class="d-none d-lg-block contact">
+                    <?=do_shortcode('[contact_phone_icon]')?>
+                    <?=do_shortcode('[contact_email_icon]')?>
+                </span>
                 <div class="d-none d-lg-flex contact">
                     <a href="/contact/book-appointment/" class="button button--sm">Book an <span>Appointment</span></a>
                     <a href="/request-a-brochure/" class="button button--sm">Request a <span>Brochure</span></a>
