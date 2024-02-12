@@ -73,10 +73,10 @@
         align-items: center;
         font-size: var(--fs-300);
         font-weight: var(--fw-400);
-        span > * {
-            display: inline-block;
-            width: 40px;
-            text-align: center;
+        &__phone a {
+            font-size: var(--fs-400);
+            font-weight: var(--fw-700);
+            color: var(--col-green-400);
         }
     }
     .button-container {

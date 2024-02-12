@@ -112,9 +112,8 @@ do_action('wp_body_open');
             <div class="container-xl">
                 <a href="/" class="logo" aria-label="Home"></a>
                 <div class="d-none d-lg-flex contact">
-                    <span>
-                        <?=do_shortcode('[contact_phone_icon]')?>
-                        <?=do_shortcode('[contact_email_icon]')?>
+                    <span class="contact__phone">
+                        <?=do_shortcode('[contact_phone]')?>
                     </span>
                     <a href="/contact/book-appointment/" class="button button--sm">Book an <span>Appointment</span></a>
                     <a href="/request-a-brochure/" class="button button--sm">Request a <span>Brochure</span></a>
