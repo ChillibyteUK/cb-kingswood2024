@@ -113,14 +113,13 @@ do_action('wp_body_open');
                 <a href="/" class="logo" aria-label="Home"></a>
                 <div class="d-none d-lg-flex contact">
                     <span class="contact__phone">
-                        <?=do_shortcode('[contact_phone]')?>
+                        <a href="tel:<?get_field('contact_phone','options')?>"><i class="fa-solid fa-phone text-green-400"></i></a>
                     </span>
                     <a href="/contact/book-appointment/" class="button button--sm">Book an <span>Appointment</span></a>
                     <a href="/request-a-brochure/" class="button button--sm">Request a <span>Brochure</span></a>
                 </div>
                 <div class="button-container text-end d-flex d-lg-none align-items-center justify-content-between">
                     <?=do_shortcode('[contact_phone_icon]')?>
-                    <?=do_shortcode('[contact_email_icon]')?>
                     <button class="navbar-toggle collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false"
                         aria-label="Toggle navigation">
