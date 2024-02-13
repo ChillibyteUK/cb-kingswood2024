@@ -217,6 +217,26 @@
             "append": ""
         },
         {
+            "key": "field_65cb6121809e0",
+            "label": "GTM Property",
+            "name": "gtm_property",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
             "key": "field_657c53e83f345",
             "label": "CTAs",
             "name": "",
@@ -596,5 +616,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1707388015
+    "modified": 1707827501
 }
