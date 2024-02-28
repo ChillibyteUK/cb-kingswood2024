@@ -73,6 +73,15 @@ defined('ABSPATH') || exit;
         </div>
     </div>
 </footer>
+<?php
+if (!is_page('book-appointment')) {
+    ?>
+<div class="mobilecta d-lg-none fixed-bottom mb-2">
+    <a href="/contact/book-appointment/" class="button button--sm">Book <span>Appointment</span></a>
+</div>
+    <?php
+}
+?>
 <?php wp_footer();
 if (get_field('gtm_property', 'options')) {
     ?>
