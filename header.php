@@ -91,11 +91,11 @@ wp_head();
             },
             "telephone": "+44 (0) 800 470 1112",
             "email": "info@kingswoodathome.co.uk",
-            "sameAs": [ 
-            "https://www.instagram.com/kingswoodathome/",
-            "https://www.facebook.com/kingswoodathome/",
-            "https://twitter.com/kingswoodathome",
-            "https://www.pinterest.co.uk/kingswoodshuttersuk/"
+            "sameAs": [
+                "https://www.instagram.com/kingswoodathome/",
+                "https://www.facebook.com/kingswoodathome/",
+                "https://twitter.com/kingswoodathome",
+                "https://www.pinterest.co.uk/kingswoodshuttersuk/"
             ]
         }
     </script>
@@ -119,7 +119,8 @@ do_action('wp_body_open');
                     <a href="/request-a-brochure/" class="button button--sm">Request a <span>Brochure</span></a>
                 </div>
                 <div class="button-container text-end d-flex d-lg-none align-items-center justify-content-between">
-                    <a href="tel:<?=parse_phone(get_field('contact_phone','options'))?>"><i class="fa-solid fa-phone text-green-400"></i></a>    
+                    <a href="tel:<?=parse_phone(get_field('contact_phone', 'options'))?>"
+                        class="me-4"><i class="fa-solid fa-phone text-green-400"></i></a>
                     <button class="navbar-toggle collapsed" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false"
                         aria-label="Toggle navigation">
