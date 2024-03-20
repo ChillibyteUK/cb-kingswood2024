@@ -22376,19 +22376,19 @@ body .gform_wrapper .gform_footer button {
   flex-basis: 100%;
   text-align: center;
 }
-@media (min-width: 576px) {
+@media (min-width: 768px) {
   .features__card {
     flex-basis: calc(50% - var(--_gap));
   }
 }
-@media (min-width: 768px) {
+@media (min-width: 992px) {
   .features__card {
     flex-basis: calc(33.33% - var(--_gap));
   }
 }
-@media (min-width: 992px) {
+@media (min-width: 1200px) {
   .features__card {
-    flex-basis: calc(20% - var(--_gap));
+    flex-basis: calc(17% - var(--_gap));
   }
 }
 .features img {
