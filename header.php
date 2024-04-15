@@ -73,6 +73,9 @@ if (get_field('bing_site_verification', 'options')) {
 wp_head();
 ?>
 
+<?php
+if ( is_page(array(7,102)) ) {
+?>
     <script type="application/ld+json">
         {
             "@context": "http://schema.org",
@@ -80,7 +83,7 @@ wp_head();
             "name": "Kingswood at Home Ltd",
             "url": "https://www.kingswoodathome.co.uk/",
             "logo": "https://www.kingswoodathome.co.uk/wp-content/themes/cb-kingswood2024/img/kingswood-wordmark.svg",
-            "description": "Wardrobes, Shutters & Blinds - Tailor Made & Installed",
+            "description": "Family run company based in Sussex designing, building and installing Fitted Furniture, Media units, Wardrobes, Shutters & Blinds, Wall Panelling.",
             "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "Unit 32, Henfield Business Park, Shoreham Road",
@@ -91,6 +94,12 @@ wp_head();
             },
             "telephone": "+44 (0) 800 470 1112",
             "email": "info@kingswoodathome.co.uk",
+            "aggregateRating": {
+                "@type": "AggregateRating",
+                "bestRating": "<?=get_field('best_rating', 'options')?>",
+                "ratingValue": "<?=get_field('rating_value', 'options')?>",
+                "reviewCount": "<?=get_field('review_count', 'options')?>"
+            },
             "sameAs": [
                 "https://www.instagram.com/kingswoodathome/",
                 "https://www.facebook.com/kingswoodathome/",
@@ -99,6 +108,9 @@ wp_head();
             ]
         }
     </script>
+<?php
+}
+?>
 </head>
 
 <body <?php body_class(); ?>
