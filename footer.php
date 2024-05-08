@@ -23,10 +23,13 @@ defined('ABSPATH') || exit;
             <div class="col-lg-8">
                 <div class="row g-4">
                     <div class="col-md-6 col-lg-4 order-3 order-lg-1">
-                        <div class="footer__heading">Find Us</div>
+                        <a href="<?=get_field('showroom_link', 'options')?>"><div class="footer__heading">Showroom</div></a>
                         <a
                         href="<?=get_field('google_directions', 'options')?>"
-                        target="_blank"><?=get_field('contact_address', 'options')?></a>
+                        target="_blank"><?=get_field('contact_address', 'options')?></a><br>
+                        <a
+                        href="<?=get_field('google_directions', 'options')?>"
+                        target="_blank" class="mt-2 d-block"><i class="fa-solid fa-location-dot"></i> Get Directions</a>
                     </div>
                     <div class="col-md-6 col-lg-4 order-1 order-lg-2">
                         <div class="footer__heading">Our Products</div>
