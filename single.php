@@ -36,6 +36,12 @@ foreach ($blocks as $block) {
             $sidebar[$heading] = $id;
         }
     }
+    if ($block['blockName'] == 'acf/cb-text-image') {
+            $heading = " " . strip_tags($block['attrs']['data']['title']);
+            $id = acf_slugify($heading);
+            echo '<a id="' . $id . '" class="anchor"></a>';
+            $sidebar[$heading] = $id;
+    }
     echo render_block($block);
 }
 ?>
@@ -98,4 +104,3 @@ while ($r->have_posts()) {
 </main>
 <?php
 get_footer();
-?>

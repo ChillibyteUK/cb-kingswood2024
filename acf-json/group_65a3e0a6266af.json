@@ -120,7 +120,7 @@
             "label": "Content",
             "name": "content",
             "aria-label": "",
-            "type": "textarea",
+            "type": "wysiwyg",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
