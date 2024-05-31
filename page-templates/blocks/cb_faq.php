@@ -3,9 +3,13 @@ $classes = $block['className'] ?? 'py-5';
 ?>
 <section class="faqs <?=$classes?>">
     <div class="container-xl">
-        <h2 class="mb-4"><?=get_field('title')?>
-        </h2>
         <?php
+        if (get_field('title') ?? null) {
+            ?>
+        <h2 class="mb-4"><?=get_field('title')?></h2>
+            <?php
+        }
+
     $accordion = random_str(5);
 
         echo '<div itemscope="" itemtype="https://schema.org/FAQPage" id="accordion' .  $accordion . '" class="accordion accordion-flush">';
