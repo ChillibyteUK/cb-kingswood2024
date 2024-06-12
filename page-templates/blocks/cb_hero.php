@@ -5,7 +5,7 @@
             $active = 'active';
             while(have_rows('background')) {
                 the_row();
-                $image_alt = get_post_meta(get_sub_field('image'), '_wp_attachment_image_alt', true);
+                $image_alt = get_post_meta(get_sub_field('image'), '_wp_attachment_image_alt', true) ?? null;
                 ?>
             <div class="carousel-item <?=$active?>">
                 <img src="<?=wp_get_attachment_image_url(get_sub_field('image'), 'full')?>"
