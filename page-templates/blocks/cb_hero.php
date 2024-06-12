@@ -5,10 +5,11 @@
             $active = 'active';
             while(have_rows('background')) {
                 the_row();
+                $image_alt = get_post_meta($image_id, '_wp_attachment_image_alt', true);
                 ?>
             <div class="carousel-item <?=$active?>">
                 <img src="<?=wp_get_attachment_image_url(get_sub_field('image'), 'full')?>"
-                    class="d-block w-100" alt="">
+                    class="d-block w-100" alt="<?=$image_alt?>">
             </div>
             <?php
                 $active = '';
@@ -45,7 +46,8 @@
             <?=get_field('pre_title')?>
         </div>
         <h1 class="hero__title">
-            <?=get_field('title')?></h1>
+            <?=get_field('title')?>
+        </h1>
         <div class="hero__content">
             <?=get_field('content')?>
         </div>
