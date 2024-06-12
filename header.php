@@ -90,9 +90,10 @@ if ( is_page(array(7,102)) ) {
                 "addressLocality": "Henfield",
                 "addressRegion": "West Sussex",
                 "postalCode": "BN5 9SL",
-                "addressCountry": "UK"
+                "addressCountry": "GB"
             },
             "telephone": "+44 (0) 800 470 1112",
+            "openingHours": ["Mo-Fr 09:00-17:00, Sa 09:00-13:00"],
             "email": "info@kingswoodathome.co.uk",
             "aggregateRating": {
                 "@type": "AggregateRating",
