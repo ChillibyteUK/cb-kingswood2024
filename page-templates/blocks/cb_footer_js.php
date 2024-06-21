@@ -6,7 +6,7 @@ function output_acf_script()
 {
     global $acf_script;
     if (!empty($acf_script)) {
-        echo '<script type="text/javascript">' . $acf_script . '</script>';
+        echo '<script type="text/javascript">' . esc_js($acf_script) . '</script>';
     } else {
         echo '<!-- No script found in ACF field -->';
     }
