@@ -1,10 +1,10 @@
 {
-    "key": "group_65a156144ceb4",
-    "title": "CB Door Colour",
+    "key": "group_667540184d79e",
+    "title": "CB Footer JS",
     "fields": [
         {
-            "key": "field_65a15614658a2",
-            "label": "CB Door Colour",
+            "key": "field_66754018eb934",
+            "label": "CB Footer JS",
             "name": "",
             "aria-label": "",
             "type": "message",
@@ -21,11 +21,11 @@
             "esc_html": 0
         },
         {
-            "key": "field_65a15614694ab",
-            "label": "Door Colour",
-            "name": "door_colour",
+            "key": "field_66754025eb935",
+            "label": "",
+            "name": "",
             "aria-label": "",
-            "type": "checkbox",
+            "type": "textarea",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -34,24 +34,11 @@
                 "class": "",
                 "id": ""
             },
-            "choices": {
-                "White": "White",
-                "Gardenia": "Gardenia",
-                "Vanilla": "Vanilla",
-                "Mushroom": "Mushroom",
-                "Fudge": "Fudge",
-                "Light Grey": "Light Grey",
-                "Dust Grey": "Dust Grey",
-                "Cashmere": "Cashmere",
-                "Graphite": "Graphite"
-            },
-            "default_value": [],
-            "return_format": "value",
-            "allow_custom": 0,
-            "layout": "vertical",
-            "toggle": 0,
-            "save_custom": 0,
-            "custom_choice_button_text": "Add new choice"
+            "default_value": "",
+            "maxlength": "",
+            "rows": 19,
+            "placeholder": "",
+            "new_lines": ""
         }
     ],
     "location": [
@@ -59,7 +46,7 @@
             {
                 "param": "block",
                 "operator": "==",
-                "value": "acf\/cb-door-colour"
+                "value": "acf\/cb-footer-js"
             }
         ]
     ],
@@ -72,5 +59,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1705072175
+    "modified": 1718960180
 }

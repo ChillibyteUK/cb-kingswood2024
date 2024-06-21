@@ -167,31 +167,12 @@ function acf_blocks()
             'supports' => array('mode' => false),
         ));
 
-        // DOORS
         acf_register_block_type(array(
-            'name'				=> 'cb_door_style',
-            'title'				=> __('CB Door Style'),
+            'name'				=> 'cb_footer_js',
+            'title'				=> __('CB Footer JS'),
             'category'			=> 'layout',
             'icon'				=> 'cover-image',
-            'render_template'	=> 'page-templates/blocks/cb_door_style.php',
-            'mode'	=> 'edit',
-            'supports' => array('mode' => false),
-        ));
-        acf_register_block_type(array(
-            'name'				=> 'cb_door_finish',
-            'title'				=> __('CB Door Finish'),
-            'category'			=> 'layout',
-            'icon'				=> 'cover-image',
-            'render_template'	=> 'page-templates/blocks/cb_door_finish.php',
-            'mode'	=> 'edit',
-            'supports' => array('mode' => false),
-        ));
-        acf_register_block_type(array(
-            'name'				=> 'cb_door_colour',
-            'title'				=> __('CB Door Colour'),
-            'category'			=> 'layout',
-            'icon'				=> 'cover-image',
-            'render_template'	=> 'page-templates/blocks/cb_door_colour.php',
+            'render_template'	=> 'page-templates/blocks/cb_footer_js.php',
             'mode'	=> 'edit',
             'supports' => array('mode' => false),
         ));
