@@ -1,6 +1,6 @@
 <?php
 global $acf_script;
-$acf_script = get_field('script');
+$acf_script = get_field('script') ?? null;
 
 function output_acf_script()
 {
@@ -11,4 +11,7 @@ function output_acf_script()
         echo '<!-- No script found in ACF field -->';
     }
 }
-add_action('wp_footer', 'output_acf_script', 9999);
+
+if ($acf_script) {
+    add_action('wp_footer', 'output_acf_script', 9999);
+}
