@@ -1,43 +1,43 @@
-.fieldset-cf7mls-wrapper {
-    p {
-        display: none;
-    }
-    button,
-    .wpcf7-form-control.wpcf7-submit.has-spinner {
-        @extend .btn;
-        @extend .btn-primary;
-        margin-bottom: 0 !important;
-        font-weight: var(--fw-600) !important;
-        padding: 0.5rem 2rem !important;
-        display: block;
-        width: 100%;
-    }
-    .cf7mls_back {
-        display: none;
-    }
-}
-form .wpcf7-response-output {
-    margin-top: 0 !important;
-}
+// .fieldset-cf7mls-wrapper {
+//     p {
+//         display: none;
+//     }
+//     button,
+//     .wpcf7-form-control.wpcf7-submit.has-spinner {
+//         @extend .btn;
+//         @extend .btn-primary;
+//         margin-bottom: 0 !important;
+//         font-weight: var(--fw-600) !important;
+//         padding: 0.5rem 2rem !important;
+//         display: block;
+//         width: 100%;
+//     }
+//     .cf7mls_back {
+//         display: none;
+//     }
+// }
+// form .wpcf7-response-output {
+//     margin-top: 0 !important;
+// }
 
-.wpcf7-acceptance {
-    .wpcf7-list-item {
-        margin-left: 0;
-        label {
-            display: flex;
-            gap: 0.5rem;
-        }
-    }
-    input[type=checkbox] {
-        @extend .form-check-input;
-        margin-inline: 0.25rem;
-    }
-    label {
-        font-size: var(--fs-300);
-    }
-}
+// .wpcf7-acceptance {
+//     .wpcf7-list-item {
+//         margin-left: 0;
+//         label {
+//             display: flex;
+//             gap: 0.5rem;
+//         }
+//     }
+//     input[type=checkbox] {
+//         @extend .form-check-input;
+//         margin-inline: 0.25rem;
+//     }
+//     label {
+//         font-size: var(--fs-300);
+//     }
+// }
 
-/*
+
 .form-control {
     font-weight: 300;
     font-size: 0.889rem;
@@ -124,4 +124,3 @@ body .gform_wrapper .gform_footer button {
     display: flex;
     justify-content: space-around;
 }
-*/
