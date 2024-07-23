@@ -21992,7 +21992,7 @@ strong, b {
   justify-content: space-around;
 }
 
-.gravit-theme fieldset {
+.gform_wrapper.gravit-theme fieldset {
   padding-left: 15px;
   margin-right: 15px;
 }
