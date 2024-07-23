@@ -22003,6 +22003,10 @@ strong, b {
   border-bottom: 1px solid var(--col-green-400);
 }
 
+.gform_wrapper.gravity-theme .gfield_checkbox label, .gform_wrapper.gravity-theme .gfield_radio label {
+  font-size: 1rem;
+}
+
 .hero {
   --_c-height: 600px;
   height: var(--_c-height);
