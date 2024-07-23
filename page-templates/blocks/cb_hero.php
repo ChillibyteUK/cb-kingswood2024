@@ -8,8 +8,7 @@
                 $image_alt = get_post_meta(get_sub_field('image'), '_wp_attachment_image_alt', true) ?? null;
                 ?>
             <div class="carousel-item <?=$active?>">
-                <img src="<?=wp_get_attachment_image_url(get_sub_field('image'), 'full')?>"
-                    class="d-block w-100" alt="<?=$image_alt?>">
+                <?=wp_get_attachment_image(get_sub_field('image'), 'full', false, array('class' => 'd-block w-100', 'alt' => $image_alt))?>
             </div>
             <?php
                 $active = '';
