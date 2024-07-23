@@ -13,9 +13,15 @@ $align = isset($titleAlign) && $titleAlign == 'Left' ? '' : 'text-center';
 ?>
     <div class="container-xl">
         <div class="intro__inner">
+            <?php
+            if (get_field('title') ?? null) {
+                ?>
             <h2 class="<?=$align?>">
                 <?=get_field('title')?>
             </h2>
+                <?php
+            }
+            ?>
             <div class="intro__wide">
                 <?=get_field('content')?>
             </div>
