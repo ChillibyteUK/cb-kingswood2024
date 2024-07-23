@@ -136,6 +136,7 @@ body .gform_wrapper .gform_footer button {
     border-bottom: 1px solid var(--col-green-400);
 }
 
-.gform_wrapper.gravity-theme .gfield_checkbox label, .gform_wrapper.gravity-theme .gfield_radio label {
-    font-size: 1rem;
+.gform_wrapper.gravity-theme .gfield_checkbox label,
+.gform_wrapper.gravity-theme .gfield_radio label {
+    font-size: 1rem !important;
 }
