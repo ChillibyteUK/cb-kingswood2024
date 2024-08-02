@@ -9,13 +9,6 @@
                 <div class="features__content">Our expert design team will visit your home, taking you through samples and solutions to find the right interior feature for your home.</div>
             </div>
             <div class="features__card">
-                <img src="<?=get_stylesheet_directory_uri()?>/img/icon-flexible.svg"
-                    alt="">
-                <div class="features__pre-title">Flexible</div>
-                <div class="features__title">0% Interest Free</div>
-                <div class="features__content">We offer an interest-free payment option to make the process as stress-free as possible, so you can make your dream home a reality.</div>
-            </div>
-            <div class="features__card">
                 <img src="<?=get_stylesheet_directory_uri()?>/img/icon-installation.svg"
                     alt="">
                 <div class="features__pre-title">Expert</div>
