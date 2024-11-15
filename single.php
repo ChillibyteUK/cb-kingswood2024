@@ -2,7 +2,10 @@
 // Exit if accessed directly.
 defined('ABSPATH') || exit;
 get_header();
-$img = get_the_post_thumbnail_url(get_the_ID(), 'full');
+// $img = get_the_post_thumbnail_url(get_the_ID(), 'full');
+$thumbnail_id = get_post_thumbnail_id(get_the_ID());
+$alt_text = get_post_meta($thumbnail_id, '_wp_attachment_image_alt', true);
+
 ?>
 <main id="main" class="blog">
     <?php
@@ -22,7 +25,7 @@ if (function_exists('yoast_breadcrumb')) {
         <div class="row g-4 pb-4">
             <div class="col-lg-9 order-2">
                 <h1 class="blog__title"><?=get_the_title()?></h1>
-                <img src="<?=$img?>" alt="" class="blog__image">
+                <?=get_the_post_thumbnail(get_the_ID(), 'full', array('class' => 'blog__image', 'alt' => $alt_text)?>
                 <?php
         $count = estimate_reading_time_in_minutes(get_the_content(), 200, true, true);
 echo $count;
