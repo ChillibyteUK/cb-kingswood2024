@@ -119,7 +119,9 @@ if ( is_page(array(7,102)) ) {
     <?php
 do_action('wp_body_open');
 ?>
-    <div class="topbit"></div>
+    <div class="topbit text-center">
+        <strong>Substantial Savings</strong> - Winter promotion now on for Black Friday
+    </div>
     <div id="theNav">
         <div id="preNav">
             <div class="container-xl">

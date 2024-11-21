@@ -1,31 +1,39 @@
 :root {
     --topbit-height: 60px;
 }
+// .topbit {
+//     height: var(--topbit-height);
+//     background-image: url(../img/bg-paisley.svg);
+//     background-size: 100px;
+//     background-repeat: repeat;
+//     background-position: center;
+//     position: relative;
+//     isolation: isolate;
+//     &::before {
+//         content: "";
+//         position: absolute;
+//         width: 80px;
+//         height: 80px;
+//         border-radius: 100vw;
+//         background-color: white;
+//         left: 50%;
+//         top: 20px;
+//         transform: translateX(-50%);
+//         z-index: -1;
+//         background-image: url(../img/icon-crown.svg);
+//         background-position: center 8px;
+//         background-repeat: no-repeat;
+//         background-size: 40px auto;
+    
+//     }
+// }
+
 .topbit {
     height: var(--topbit-height);
-    background-image: url(../img/bg-paisley.svg);
-    background-size: 100px;
-    background-repeat: repeat;
-    background-position: center;
     position: relative;
     isolation: isolate;
-    &::before {
-        content: "";
-        position: absolute;
-        width: 80px;
-        height: 80px;
-        border-radius: 100vw;
-        background-color: white;
-        left: 50%;
-        top: 20px;
-        transform: translateX(-50%);
-        z-index: -1;
-        background-image: url(../img/icon-crown.svg);
-        background-position: center 8px;
-        background-repeat: no-repeat;
-        background-size: 40px auto;
-    
-    }
+    background-color: #ff9305;
+    color: black;
 
 }
 
