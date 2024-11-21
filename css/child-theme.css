@@ -21539,8 +21539,9 @@ strong, b {
   position: relative;
   isolation: isolate;
   padding-block: 0.5rem;
-  background-color: #ff9305;
-  color: black;
+  background-color: #c0392b;
+  color: white;
+  font-size: var(--fs-450);
 }
 
 #theNav {
