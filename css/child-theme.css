@@ -25,6 +25,7 @@
   --col-primary-100: hsl(var(--hsl-primary-100));
   --col-secondary-400: hsl(var(--hsl-secondary-400));
   --col-light: #f4f4f4;
+  --text: #333333;
   --col-grey-900: #2A2A2A;
   --col-grey-700: #747474;
   --col-grey-500: #ADADAD;
@@ -21420,7 +21421,7 @@ body {
   font-size: var(--fs-400);
   line-height: 1.556;
   font-style: normal;
-  color: black;
+  color: #333333;
   font-family: var(--ff-body);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
