@@ -159,7 +159,7 @@ if (is_array($sale_banner) && isset($sale_banner[0]) && $sale_banner[0] === 'Yes
         'theme_location'  => 'primary_nav',
         'container_class' => 'w-100',
         // 'container_id'    => 'primaryNav',
-        'menu_class'      => 'navbar-nav justify-content-between gap-4 w-100',
+        'menu_class'      => 'navbar-nav justify-content-between w-100',
         'fallback_cb'     => '',
         'menu_id'         => 'navbarr',
         'depth'           => 3,
