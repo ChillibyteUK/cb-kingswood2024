@@ -153,9 +153,41 @@ if (is_array($sale_banner) && isset($sale_banner[0]) && $sale_banner[0] === 'Yes
             <div class="container-xl">
                 <nav class="navbar navbar-expand-lg p-0">
                     <div class="collapse navbar-collapse" id="navbar">
-                        <?php wp_nav_menu(array( 'theme_location'  => 'primary_nav', )); ?>
+                    <?php
+                    wp_nav_menu(
+    array(
+        'theme_location'  => 'primary_nav',
+        'container_class' => 'w-100',
+        // 'container_id'    => 'primaryNav',
+        'menu_class'      => 'navbar-nav justify-content-between gap-4 w-100',
+        'fallback_cb'     => '',
+        'menu_id'         => 'navbarr',
+        'depth'           => 3,
+        'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
+    )
+);
+?>
+
                     </div>
                 </nav>
             </div>
         </div>
     </div>
+    <script>
+document.querySelectorAll('.dropdown').forEach(function (dropdown) {
+  dropdown.addEventListener('show.bs.dropdown', function (e) {
+    const dropdownMenu = e.target.querySelector('.dropdown-menu');
+    
+    // Ensure dropdownMenu exists
+    if (dropdownMenu) {
+      const rect = dropdownMenu.getBoundingClientRect();
+
+      // Check if the dropdown menu goes beyond the viewport on the right side
+      if (rect.right > window.innerWidth) {
+        dropdownMenu.classList.add('dropdown-menu-end');
+      }
+    }
+  });
+});
+
+</script>

@@ -47,7 +47,7 @@
 
 #preNav {
     @media (min-width:992px) {
-        border-bottom: 1px solid var(--col-brown-400);
+        border-bottom: 1px solid var(--col-grey-500);
     }
     background-color: white;
     .container-xl {
@@ -112,22 +112,29 @@
 }
 #wrapper-navbar {
 
-    background-color: var(--col-green-400);
-    color: white;
+    background-color: white;
+    color: var(--col-black);
 
     #navbar > div {
         flex-grow: 1;
     }
 
-    .mega-menu {
-        display: flex !important;
-        justify-content: space-between;
+    .nav-link,
+    .dropdown-item {
+        color: var(--col-black);
+        text-transform: uppercase;
+        font-size: var(--fs-200);
+    }   
+    @media (min-width:992px) {
+        border-bottom: 1px solid var(--col-grey-500);
     }
+
+    @media (min-width:992px) and (max-width:1624px) {
+        #menu-item-221 .dropdown-menu {
+            left: auto;
+            right: 0;
+        }
+    }
+
 }
 
-.mega-menu-item .image {
-    width: 100%;
-    object-fit: cover;
-    object-position: center;
-    aspect-ratio: 16 / 9;
-}
