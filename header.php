@@ -118,10 +118,16 @@ if ( is_page(array(7,102)) ) {
     <?php understrap_body_attributes(); ?>>
     <?php
 do_action('wp_body_open');
+
+$sale_banner = get_field('show_sale_banner','option');
+if (is_array($sale_banner) && isset($sale_banner[0]) && $sale_banner[0] === 'Yes') {
+    ?>
+<div class="topbit text-center">
+    <?=get_field('banner_text','option')?>
+</div>
+    <?php
+}
 ?>
-    <div class="topbit text-center">
-        <strong>Substantial Savings</strong> - Winter promotion now on for Black Friday
-    </div>
     <div id="theNav">
         <div id="preNav">
             <div class="container-xl">

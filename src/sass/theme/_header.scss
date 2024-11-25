@@ -33,7 +33,7 @@
     position: relative;
     isolation: isolate;
     padding-block: 0.5rem;
-    background-color: #c0392b;
+    background-color: var(--col-black);
     color: white;
     font-size: var(--fs-450);
 }

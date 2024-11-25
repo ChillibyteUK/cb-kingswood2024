@@ -44,6 +44,8 @@ $col-grey: #FFF0F0;
 
     --col-light: #f4f4f4;
     --text: #333333;
+    --col-dark: var(--text);
+    --col-black: var(--text);
 
     --col-grey-900: #2A2A2A;
     --col-grey-700: #747474;
