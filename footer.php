@@ -18,7 +18,7 @@ defined('ABSPATH') || exit;
                         <div class="footer__phone"><?=do_shortcode('[contact_phone]')?></div>
                         <div class="footer__email"><?=do_shortcode('[contact_email]')?></div>
                     </div>
-                    <img src="<?=get_stylesheet_directory_uri()?>/img/BIID_Appellation_INDPARTNER_2023_AW-BLACK.png" alt="BIID Industry Partner" width=2506 height=726>
+                    <img src="<?=get_stylesheet_directory_uri()?>/img/BIID_Appellation_INDPARTNER_2023_AW-BLACK.png" alt="BIID Industry Partner" width=2506 height=726 style="max-width:350px">
                 </div>
             </div>
             <div class="col-lg-8">
