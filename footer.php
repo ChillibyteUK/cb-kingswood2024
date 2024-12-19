@@ -13,11 +13,12 @@ defined('ABSPATH') || exit;
                                 src="<?=get_stylesheet_directory_uri()?>/img/kingswood-wordmark.svg"
                                 alt="Kingswood at Home" class="logo mb-5"></a>
                     </div>
-                    <div class="col-md-6 col-lg-12">
+                    <div class="col-md-6 col-lg-12 mb-4">
                         <div class="footer__heading">Call us on</div>
                         <div class="footer__phone"><?=do_shortcode('[contact_phone]')?></div>
                         <div class="footer__email"><?=do_shortcode('[contact_email]')?></div>
                     </div>
+                    <img src="<?=get_stylesheet_directory_uri()?>/img/BIID_Appellation_INDPARTNER_2023_AW-BLACK.png" alt="BIID Industry Partner" width=2506 height=726>
                 </div>
             </div>
             <div class="col-lg-8">
