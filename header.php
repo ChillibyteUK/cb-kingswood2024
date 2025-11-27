@@ -131,7 +131,7 @@ session_start();
             <div class="container-xl">
                 <a href="/" class="logo" aria-label="Home"></a>
 				<div class="d-none d-lg-flex">
-					<?= do_shortcode( '[brb_collection id=3838]' ); ?>
+					<?= do_shortcode( '[brb_collection id=4088]' ); ?>
 				</div>
                 <div class="d-none d-lg-flex contact">
                     <span class="contact__phone">
