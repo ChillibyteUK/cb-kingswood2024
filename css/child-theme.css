@@ -21568,7 +21568,7 @@ strong, b {
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
-  padding-block: 1rem;
+  padding-block: 0.5rem;
   position: relative;
   isolation: isolate;
   z-index: 0;
