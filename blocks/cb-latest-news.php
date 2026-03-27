@@ -13,7 +13,7 @@ if ($q->have_posts()) {
     ?>
 <section class="latest-news py-5 <?=$classes?>">
     <div class="container-xl">
-        <div class="latest-news__header">
+        <div class="latest-news__header d-flex align-items-center justify-content-between mb-4">
             <h2 class="h3 mb-0">Latest News</h2>
             <?php
             if ($blog_url) {
@@ -33,7 +33,7 @@ if ($q->have_posts()) {
                 <a class="index_blog__card latest-news__card" href="<?=esc_url(get_the_permalink())?>">
                     <img class="index_blog__image" src="<?=esc_url($img)?>" alt="<?=esc_attr(get_the_title())?>">
                     <div class="index_blog__content">
-                        <h3 class="index_blog__title latest-news__title pb-2 mb-0"><?=esc_html(get_the_title())?></h3>
+                        <h3 class="index_blog__title latest-news__title pb-2 mb-0" style="font-size:var(--fs-500);"><?=esc_html(get_the_title())?></h3>
                         <div class="d-flex flex-column gap-2">
                             <div class="index_blog__read"><?=estimate_reading_time_in_minutes(get_the_content(), 200, true, false)?>m read</div>
                             <div class="index_blog__meta">
