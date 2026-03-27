@@ -18,7 +18,7 @@ if ($q->have_posts()) {
             <?php
             if ($blog_url) {
                 ?>
-            <a href="<?=esc_url($blog_url)?>" class="button button--sm">View <span>all</span></a>
+            <a href="<?=esc_url($blog_url)?>" class="button button--sm me-0">View <span>all</span></a>
                 <?php
             }
             ?>
