@@ -7,7 +7,7 @@ function acf_blocks()
             'title'				=> __('CB Hero'),
             'category'			=> 'layout',
             'icon'				=> 'cover-image',
-            'render_template'	=> 'page-templates/blocks/cb_hero.php',
+            'render_template'	=> 'blocks/cb_hero.php',
             'mode'	=> 'edit',
             'supports' => array('mode' => false),
         ));
@@ -16,7 +16,7 @@ function acf_blocks()
             'title'				=> __('CB Intro'),
             'category'			=> 'layout',
             'icon'				=> 'cover-image',
-            'render_template'	=> 'page-templates/blocks/cb_intro.php',
+            'render_template'	=> 'blocks/cb_intro.php',
             'mode'	=> 'edit',
             'supports' => array('mode' => false),
         ));
@@ -25,7 +25,7 @@ function acf_blocks()
             'title'				=> __('CB Intro - Wide'),
             'category'			=> 'layout',
             'icon'				=> 'cover-image',
-            'render_template'	=> 'page-templates/blocks/cb_intro-wide.php',
+            'render_template'	=> 'blocks/cb_intro-wide.php',
             'mode'	=> 'edit',
             'supports' => array('mode' => false),
         ));
@@ -34,7 +34,7 @@ function acf_blocks()
             'title'				=> __('CB Text / Image'),
             'category'			=> 'layout',
             'icon'				=> 'cover-image',
-            'render_template'	=> 'page-templates/blocks/cb_text_image.php',
+            'render_template'	=> 'blocks/cb_text_image.php',
             'mode'	=> 'edit',
             'supports' => array('mode' => false),
         ));
@@ -43,7 +43,7 @@ function acf_blocks()
             'title'				=> __('CB Child Nav'),
             'category'			=> 'layout',
             'icon'				=> 'cover-image',
-            'render_template'	=> 'page-templates/blocks/cb_child-nav.php',
+            'render_template'	=> 'blocks/cb_child-nav.php',
             'mode'	=> 'edit',
             'supports' => array('mode' => false),
         ));
@@ -52,7 +52,7 @@ function acf_blocks()
             'title'				=> __('CB Sibling Nav'),
             'category'			=> 'layout',
             'icon'				=> 'cover-image',
-            'render_template'	=> 'page-templates/blocks/cb_sibling-nav.php',
+            'render_template'	=> 'blocks/cb_sibling-nav.php',
             'mode'	=> 'edit',
             'supports' => array('mode' => false),
         ));
@@ -61,7 +61,7 @@ function acf_blocks()
             'title'				=> __('CB Kingswood Nav'),
             'category'			=> 'layout',
             'icon'				=> 'cover-image',
-            'render_template'	=> 'page-templates/blocks/cb_kwd-nav.php',
+            'render_template'	=> 'blocks/cb_kwd-nav.php',
             'mode'	=> 'edit',
             'supports' => array('mode' => false),
         ));
@@ -70,7 +70,7 @@ function acf_blocks()
             'title'				=> __('CB Nav Cards'),
             'category'			=> 'layout',
             'icon'				=> 'cover-image',
-            'render_template'	=> 'page-templates/blocks/cb_nav_cards.php',
+            'render_template'	=> 'blocks/cb_nav_cards.php',
             'mode'	=> 'edit',
             'supports' => array('mode' => false),
         ));
@@ -79,7 +79,7 @@ function acf_blocks()
             'title'				=> __('CB Wide CTA'),
             'category'			=> 'layout',
             'icon'				=> 'cover-image',
-            'render_template'	=> 'page-templates/blocks/cb_wide-cta.php',
+            'render_template'	=> 'blocks/cb_wide-cta.php',
             'mode'	=> 'edit',
             'supports' => array('mode' => false),
         ));
@@ -88,7 +88,7 @@ function acf_blocks()
             'title'				=> __('CB Image CTA (LP)'),
             'category'			=> 'layout',
             'icon'				=> 'cover-image',
-            'render_template'	=> 'page-templates/blocks/cb_image_cta.php',
+            'render_template'	=> 'blocks/cb_image_cta.php',
             'mode'	=> 'edit',
             'supports' => array('mode' => false),
         ));
@@ -97,7 +97,7 @@ function acf_blocks()
             'title'				=> __('CB Kingswood Features'),
             'category'			=> 'layout',
             'icon'				=> 'cover-image',
-            'render_template'	=> 'page-templates/blocks/cb_features.php',
+            'render_template'	=> 'blocks/cb_features.php',
             'mode'	=> 'edit',
             'supports' => array('mode' => false),
         ));
@@ -106,7 +106,7 @@ function acf_blocks()
             'title'				=> __('CB Sub-Page Header'),
             'category'			=> 'layout',
             'icon'				=> 'cover-image',
-            'render_template'	=> 'page-templates/blocks/cb_subpage_header.php',
+            'render_template'	=> 'blocks/cb_subpage_header.php',
             'mode'	=> 'edit',
             'supports' => array('mode' => false),
         ));
@@ -115,7 +115,7 @@ function acf_blocks()
             'title'				=> __('CB Four Images'),
             'category'			=> 'layout',
             'icon'				=> 'cover-image',
-            'render_template'	=> 'page-templates/blocks/cb_four_images.php',
+            'render_template'	=> 'blocks/cb_four_images.php',
             'mode'	=> 'edit',
             'supports' => array('mode' => false),
         ));
@@ -125,7 +125,7 @@ function acf_blocks()
             'title'				=> __('CB Centre Para (LP)'),
             'category'			=> 'layout',
             'icon'				=> 'cover-image',
-            'render_template'	=> 'page-templates/blocks/cb_centre_para.php',
+            'render_template'	=> 'blocks/cb_centre_para.php',
             'mode'	=> 'edit',
             'supports' => array('mode' => false),
         ));
@@ -135,7 +135,7 @@ function acf_blocks()
             'title'				=> __('CB Project Gallery'),
             'category'			=> 'layout',
             'icon'				=> 'cover-image',
-            'render_template'	=> 'page-templates/blocks/cb_cat_gallery.php',
+            'render_template'	=> 'blocks/cb_cat_gallery.php',
             'mode'	=> 'edit',
             'supports' => array('mode' => false),
         ));
@@ -144,7 +144,7 @@ function acf_blocks()
             'title'				=> __('CB Image Cols'),
             'category'			=> 'layout',
             'icon'				=> 'cover-image',
-            'render_template'	=> 'page-templates/blocks/cb_image_cols.php',
+            'render_template'	=> 'blocks/cb_image_cols.php',
             'mode'	=> 'edit',
             'supports' => array('mode' => false),
         ));
@@ -153,7 +153,7 @@ function acf_blocks()
             'title'				=> __('CB FAQ'),
             'category'			=> 'layout',
             'icon'				=> 'cover-image',
-            'render_template'	=> 'page-templates/blocks/cb_faq.php',
+            'render_template'	=> 'blocks/cb_faq.php',
             'mode'	=> 'edit',
             'supports' => array('mode' => false),
         ));
@@ -162,7 +162,7 @@ function acf_blocks()
             'title'				=> __('CB Map/Contact'),
             'category'			=> 'layout',
             'icon'				=> 'cover-image',
-            'render_template'	=> 'page-templates/blocks/cb_map.php',
+            'render_template'	=> 'blocks/cb_map.php',
             'mode'	=> 'edit',
             'supports' => array('mode' => false),
         ));
@@ -172,7 +172,7 @@ function acf_blocks()
             'title'				=> __('CB Footer JS'),
             'category'			=> 'layout',
             'icon'				=> 'cover-image',
-            'render_template'	=> 'page-templates/blocks/cb_footer_js.php',
+            'render_template'	=> 'blocks/cb_footer_js.php',
             'mode'	=> 'edit',
             'supports' => array('mode' => false),
         ));
@@ -181,7 +181,16 @@ function acf_blocks()
             'title'				=> __('CB Carousel Gallery'),
             'category'			=> 'layout',
             'icon'				=> 'cover-image',
-            'render_template'	=> 'page-templates/blocks/cb_carousel_gallery.php',
+            'render_template'	=> 'blocks/cb_carousel_gallery.php',
+            'mode'	=> 'edit',
+            'supports' => array('mode' => false),
+        ));
+        acf_register_block_type(array(
+            'name'				=> 'cb_latest_news',
+            'title'				=> __('CB Latest News'),
+            'category'			=> 'layout',
+            'icon'				=> 'cover-image',
+            'render_template'	=> 'blocks/cb-latest-news.php',
             'mode'	=> 'edit',
             'supports' => array('mode' => false),
         ));
