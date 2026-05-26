@@ -33,7 +33,7 @@ $crown     = isset( $has_crown ) && ! empty( $has_crown ) && 'Yes' === $has_crow
             }
             ?>
             <div class="intro__wide">
-                <?= wp_kses_post( get_field( 'content' ) ); ?>
+                <?= get_field( 'content' ); ?>
             </div>
         </div>
     </div>
