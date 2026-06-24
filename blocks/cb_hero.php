@@ -85,7 +85,7 @@ defined( 'ABSPATH' ) || exit;
 		}
 		if ( get_field( 'cta_1' ) || get_field( 'cta_2' ) ) {
 			?>
-        <div class="hero__ctas pt-4">
+        <div class="hero__ctas py-4">
             <?php
 			if ( get_field( 'cta_1' ) ) {
 				?>
