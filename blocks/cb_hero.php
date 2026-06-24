@@ -103,7 +103,9 @@ defined( 'ABSPATH' ) || exit;
         </div>
 			<?php
 		}
-		echo do_shortcode( '[brb_collection id=4088]' );
+		if ( ! is_front_page() ) {
+			echo do_shortcode( '[brb_collection id=4088]' );
+		}
 		?>
 	</div>
 
