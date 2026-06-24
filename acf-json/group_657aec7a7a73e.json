@@ -303,7 +303,7 @@
                     "tabs": "all",
                     "toolbar": "full",
                     "media_upload": 1,
-                    "delay": 0
+                    "delay": 1
                 },
                 {
                     "key": "field_657c53b75d1b6",
@@ -387,7 +387,7 @@
             "tabs": "all",
             "toolbar": "full",
             "media_upload": 1,
-            "delay": 0
+            "delay": 1
         },
         {
             "key": "field_661ce97729307",

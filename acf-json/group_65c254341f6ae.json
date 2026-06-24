@@ -83,7 +83,7 @@
             "tabs": "all",
             "toolbar": "full",
             "media_upload": 1,
-            "delay": 0
+            "delay": 1
         },
         {
             "key": "field_65c2543443285",
@@ -179,5 +179,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1779783883
+    "modified": 1781165155
 }
