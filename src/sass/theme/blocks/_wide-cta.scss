@@ -44,7 +44,7 @@
     a {
 	    color: var(--col-green-200);
         &:hover {
-            color: var(--col-green-400);
+            color: var(--col-white);
         }
     }
 
@@ -78,7 +78,7 @@
             }
         }
         &:hover {
-            background-color: var(--col-white);
+            background-color: var(--col-green-400);
         }
     }
 }
