@@ -32,6 +32,7 @@
         text-transform: uppercase;
         display: grid;
         place-content: center;
+        text-align: center;
         padding: 1rem;
         transition: background-color var(--transition), height var(--transition);
         background-color: hsla(var(--hsl-green-400) / 0.6);
