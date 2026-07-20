@@ -34,7 +34,7 @@ $classes = $block['className'] ?? null;
 						?>
 					<a href="<?= esc_url( $l['url'] ); ?>"
 						target="<?= esc_attr( $l['target'] ); ?>"
-						class="nav_cards__button"><?= esc_html( html_entity_decode( $l['title'] ) ); ?></a>
+						class="nav_cards__button"><?= wp_kses_post( html_entity_decode( $l['title'] ) ); ?></a>
 						<?php
 					}
 					?>
