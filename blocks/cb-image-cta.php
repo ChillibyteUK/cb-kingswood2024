@@ -29,6 +29,6 @@ $img = wp_get_attachment_image_url(get_field('image'), 'full');
 		}
 		$l = get_field('link');
 		?>
-		<a class="button" href="<?= esc_url( $l['url'] ); ?>" target="<?= esc_attr( $l['target'] ); ?>"><?= esc_html( html_entity_decode( $l['title'] ) ); ?></a>
+		<a class="button" href="<?= esc_url( $l['url'] ); ?>" target="<?= esc_attr( $l['target'] ); ?>"><?= wp_kses_post( html_entity_decode( $l['title'] ) ); ?></a>
 	</div>
 </section>
