@@ -23,7 +23,7 @@ $classes = $block['className'] ?? null;
 					src="<?= esc_url( wp_get_attachment_image_url( get_sub_field('image'), 'large' ) ); ?>"
 					alt="<?= esc_attr( $image_alt ); ?>">
 				<div class="nav_cards__card-inner">
-					<h3 class="nav_cards__title">
+					<h3 class="nav_cards__title text-center">
 						<?= wp_kses_post( get_sub_field( 'title' ) ); ?>
 					</h3>
 					<div>
