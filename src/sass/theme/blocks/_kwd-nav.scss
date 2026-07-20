@@ -21,7 +21,7 @@
         }
         &:hover {
             .kwd-nav__card-title {
-                background-color: hsla(var(--hsl-gold-400) / 0.8);
+                background-color: hsla(var(--hsl-green-400) / 0.8);
                 height: 100%;
             }
         }
@@ -32,7 +32,7 @@
         place-content: center;
         padding: 1rem;
         transition: background-color var(--transition), height var(--transition);
-        background-color: hsla(var(--hsl-gold-400) / 0.3);
+        background-color: hsla(var(--hsl-green-400) / 0.3);
         color: white;
         height: 3em;
     }
