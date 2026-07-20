@@ -24,7 +24,7 @@ $classes = $block['className'] ?? null;
 					alt="<?= esc_attr( $image_alt ); ?>">
 				<div class="nav_cards__card-inner">
 					<h3 class="nav_cards__title">
-						<?= esc_html( get_sub_field( 'title' ) ); ?>
+						<?= wp_kses_post( get_sub_field( 'title' ) ); ?>
 					</h3>
 					<div>
 						<?= wp_kses_post( get_sub_field( 'content' ) ); ?>
