@@ -19,7 +19,7 @@ $l   = $cta['link'];
 					<?= esc_html( $cta['pre_title'] ); ?>
 				</div>
 				<div class="wide_cta__title">
-					<?= esc_html( $cta['title'] ); ?>
+					<?= wp_kses_post( $cta['title'] ); ?>
 				</div>
 			</div>
 			<div class="col-md-6 wide_cta__content">
@@ -30,7 +30,7 @@ $l   = $cta['link'];
 			href="<?= esc_url( $l['url'] ); ?>"><span
 				class="icon"></span>
 			<div>
-				<?= esc_html( html_entity_decode( $l['title'] ) ); ?>
+				<?= wp_kses_post( html_entity_decode( $l['title'] ) ); ?>
 			</div>
 		</a>
 	</div>
