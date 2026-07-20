@@ -21775,6 +21775,7 @@ strong, b {
   background-color: var(--col-green-200);
   color: white !important;
   padding: 0.5rem 1rem;
+  border-radius: 0;
   text-transform: uppercase;
   font-weight: var(--fw-400) !important;
   letter-spacing: 1px;
@@ -21997,6 +21998,45 @@ strong, b {
 .gform_wrapper.gravity-theme .gfield_checkbox label,
 .gform_wrapper.gravity-theme .gfield_radio label {
   font-size: 1rem !important;
+}
+
+/* Gravity Forms button overrides — make GF buttons match site `.button` */
+.gform_wrapper .gform_button.button,
+.gform_wrapper .gform_footer .gform_button.button,
+.gform_wrapper input.gform_button.button[type=submit],
+.gform_wrapper button.gform_button.button {
+  display: block;
+  text-align: center;
+  width: min(300px, 90vw);
+  margin-inline: auto;
+  background-color: var(--col-green-200) !important;
+  color: white !important;
+  padding: 0.5rem 1rem !important;
+  border-radius: 0 !important;
+  text-transform: uppercase !important;
+  font-weight: var(--fw-400) !important;
+  letter-spacing: 1px;
+  position: relative;
+  line-height: 1;
+  transition: background-color var(--transition) !important;
+}
+
+.gform_wrapper .gform_button.button span {
+  font-weight: var(--fw-700);
+}
+
+.gform_wrapper .gform_button.button:hover,
+.gform_wrapper input.gform_button.button[type=submit]:hover,
+.gform_wrapper button.gform_button.button:hover {
+  background-color: var(--col-green-400) !important;
+}
+
+/* small variant */
+.gform_wrapper .gform_button.button.button--sm,
+.gform_wrapper input.gform_button.button.button--sm {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .hero {
@@ -22429,7 +22469,7 @@ strong, b {
   width: -moz-max-content;
   width: max-content;
   margin-inline: auto;
-  background-color: var(--col-gold-400);
+  background-color: var(--col-green-200);
   color: white !important;
   padding: 0.5rem 1rem;
   text-transform: uppercase;
