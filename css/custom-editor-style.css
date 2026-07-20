@@ -1,11 +1,9 @@
 @charset "UTF-8";
 :root {
-  --hsl-gold-400: 48 51% 48%;
-  --hsl-gold-600: 51 50% 35%;
-  --col-gold-400: hsl(var(--hsl-gold-400));
-  --col-gold-600: hsl(var(--hsl-gold-600));
+  --col-green-200: #7cad99;
   --hsl-green-400: 140 5% 57%;
   --col-green-400: hsl(var(--hsl-green-400));
+  --col-secondary-400: var(--col-green-400);
   --hsl-brown-400: 45 19% 24%;
   --col-brown-400: hsl(var(--hsl-brown-400));
   --hsl-peony-200: 353 13% 86%;

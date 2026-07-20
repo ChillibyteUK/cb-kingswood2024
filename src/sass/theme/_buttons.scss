@@ -3,7 +3,7 @@
     text-align: center;
     width: min(300px,90vw);
     margin-inline: auto;
-    background-color: var(--col-gold-400);
+    background-color: var(--col-green-200);
     color: white !important;
     padding: 0.5rem 1rem;
     text-transform: uppercase;
@@ -16,7 +16,7 @@
         font-weight: var(--fw-700);
     }
     &:hover {
-        background-color: var(--col-gold-600);
+        background-color: var(--col-green-400);
     }
 }
 

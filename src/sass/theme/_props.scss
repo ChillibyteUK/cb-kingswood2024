@@ -11,13 +11,18 @@ $col-grey: #FFF0F0;
 
 :root {
 
-    --hsl-gold-400: 48 51% 48%; // #b9a03c;
-    --hsl-gold-600: 51 50% 35%; // #86782d;
-    --col-gold-400: hsl(var(--hsl-gold-400));
-    --col-gold-600: hsl(var(--hsl-gold-600));
+    // --hsl-gold-400: 48 51% 48%; // #b9a03c;
+    // --hsl-gold-600: 51 50% 35%; // #86782d;
+    // --col-gold-400: hsl(var(--hsl-gold-400));
+    // --col-gold-600: hsl(var(--hsl-gold-600));
 
+	// --col-gold-400: #7cad99;
+	// --col-gold-600: #8c9790;
+    
+	--col-green-200: #7cad99;
     --hsl-green-400: 140 5% 57%; // #8c9790;
     --col-green-400: hsl(var(--hsl-green-400));
+    --col-secondary-400: var(--col-green-400);
     
     --hsl-brown-400: 45 19% 24%; // #494332;
     --col-brown-400: hsl(var(--hsl-brown-400));
