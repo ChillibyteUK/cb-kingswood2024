@@ -1,0 +1,48 @@
+<?php
+/**
+ * CB Nav Cards
+ *
+ * @package cb-kingswood2024
+ */
+
+defined( 'ABSPATH' ) || exit;
+
+$classes = $block['className'] ?? null;
+?>
+<section class="nav_cards <?= esc_attr( $classes ); ?>">
+	<div class="container-xl">
+		<div class="nav_cards__grid">
+			<?php
+			while ( have_rows('cards') ) {
+				the_row();
+				$l         = get_sub_field('link') ?? null;
+				$image_alt = get_post_meta(get_sub_field('image'), '_wp_attachment_image_alt', true) ?? null;
+				?>
+			<div class="nav_cards__card">
+				<img class="nav_cards__image"
+					src="<?= esc_url( wp_get_attachment_image_url( get_sub_field('image'), 'large' ) ); ?>"
+					alt="<?= esc_attr( $image_alt ); ?>">
+				<div class="nav_cards__card-inner">
+					<h3 class="nav_cards__title">
+						<?= esc_html( get_sub_field( 'title' ) ); ?>
+					</h3>
+					<div>
+						<?= wp_kses_post( get_sub_field( 'content' ) ); ?>
+					</div>
+					<?php
+					if ( $l ) {
+						?>
+					<a href="<?= esc_url( $l['url'] ); ?>"
+						target="<?= esc_attr( $l['target'] ); ?>"
+						class="nav_cards__button"><?= esc_html( html_entity_decode( $l['title'] ) ); ?></a>
+						<?php
+					}
+					?>
+				</div>
+			</div>
+				<?php
+			}
+			?>
+		</div>
+	</div>
+</section>
