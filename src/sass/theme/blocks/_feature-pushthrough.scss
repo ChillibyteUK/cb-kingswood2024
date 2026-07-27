@@ -1,0 +1,95 @@
+.cb-feature-pushthrough {
+
+    &__row {
+        display: flex;
+        flex-direction: column;
+        @media (min-width:768px) {
+            flex-direction: row;
+            min-height: 500px;
+        }
+    }
+
+    &__content,
+    &__image {
+        width: 100%;
+        @media (min-width:768px) {
+            width: 50%;
+        }
+    }
+
+    &__content {
+        display: flex;
+        align-items: center;
+        padding: 3rem 0.75rem;
+        @media (min-width:768px) {
+            padding-block: 4rem;
+            padding-right: 3rem;
+        }
+        // matches the padding-left of .container-xl at each of its breakpoints,
+        // so the text lines up with the rest of the page's content edge.
+        // uses % (not vw) so it's measured against the row's own width, which
+        // avoids the vw-includes-scrollbar offset and matches container-xl's
+        // own centering math exactly
+        @media (min-width:1200px) {
+            padding-left: calc((100% - 1140px) / 2 + 0.75rem);
+        }
+        @media (min-width:1400px) {
+            padding-left: calc((100% - 1320px) / 2 + 0.75rem);
+        }
+    }
+
+    &__content-inner {
+        width: 100%;
+        max-width: 560px;
+    }
+
+    &__title {
+        margin-bottom: 1rem;
+    }
+
+    &__text {
+        margin-bottom: 1.5rem;
+    }
+
+    &__link {
+        display: inline-block;
+        position: relative;
+        padding-right: 1.5rem;
+        color: var(--col-black) !important;
+        font-weight: var(--fw-700) !important;
+        font-size: var(--fs-200);
+        letter-spacing: 0.02em;
+        text-transform: uppercase;
+        &::after {
+            position: absolute;
+            content: url("data:image/svg+xml,%3Csvg width='18' height='18' viewBox='0 0 12 7' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M7.21484 2.96484L10.2498 5.99984L7.21484 9.03484' stroke='currentColor' stroke-width='0.75' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M1.75 6H10.165' stroke='%23164E95' stroke-width='0.75' stroke-miterlimit='10' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+            margin-left: 5px;
+            margin-top: -2px;
+            transition: margin-left 0.3s ease;
+        }
+        &:hover {
+            color: var(--col-green-400) !important;
+        }
+        &:hover::after {
+            margin-left: 10px;
+            stroke: var(--col-green-400) !important;
+        }
+    }
+
+    &__image {
+        position: relative;
+        min-height: 300px;
+        @media (min-width:768px) {
+            min-height: 0;
+        }
+    }
+
+    &__img {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
+}

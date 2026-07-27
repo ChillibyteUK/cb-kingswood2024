@@ -11,6 +11,17 @@ function acf_blocks() {
 	if ( function_exists( 'acf_register_block_type' ) ) {
 		acf_register_block_type(
 			array(
+				'name'            => 'cb_feature_pushthrough',
+				'title'           => __( 'CB Feature Pushthrough' ),
+				'category'        => 'layout',
+				'icon'            => 'cover-image',
+				'render_template' => 'blocks/cb-feature-pushthrough.php',
+				'mode'            => 'edit',
+				'supports'        => array( 'mode' => false ),
+			)
+		);
+		acf_register_block_type(
+			array(
 				'name'            => 'cb_hero',
 				'title'           => __( 'CB Hero' ),
 				'category'        => 'layout',
