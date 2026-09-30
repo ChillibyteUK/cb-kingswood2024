@@ -51,12 +51,16 @@ defined('ABSPATH') || exit;
 						<?php wp_nav_menu( array( 'theme_location' => 'footer_menu2' ) ); ?>
 					</div>
 					<div class="col-md-6 col-lg-4 order-6">
+						<?php
+						/*
 						<div class="footer__heading">Areas Covered</div>
 						<div class="mb-4"><?= wp_kses_post( get_field( 'footer_locations', 'option' ) ); ?></div>
 						<div class="footer__badges">
 							<img src="<?= esc_url( get_stylesheet_directory_uri() . '/img/makeitsafe.svg' ); ?>" alt="">
 							<img src="<?= esc_url( get_stylesheet_directory_uri() . '/img/bbsa.svg' ); ?>" alt="">
 						</div>
+						*/
+						?>
 					</div>
 				</div>
 			</div>
