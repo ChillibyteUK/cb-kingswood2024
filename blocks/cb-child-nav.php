@@ -20,6 +20,18 @@ defined( 'ABSPATH' ) || exit;
 				'post_type'      => 'page',
 				'posts_per_page' => -1,
 				'post_parent'    => $current_page_id,
+				'meta_query'     => array(
+					'relation' => 'OR',
+					array(
+						'key'     => 'exclude_from_nav',
+						'compare' => 'NOT EXISTS',
+					),
+					array(
+						'key'     => 'exclude_from_nav',
+						'value'   => '1',
+						'compare' => '!=',
+					),
+				),
 			);
 
 			$query = new WP_Query($args);
