@@ -10,14 +10,28 @@ defined( 'ABSPATH' ) || exit;
 global $post;
 
 $current_page_id = $post->ID;
-$parent_post_id  = get_post_field('post_parent', $current_page_id); // Get the parent post ID
+$parent_post_id  = get_post_field( 'post_parent', $current_page_id ); // Get the parent post ID.
 
-$q = new WP_Query(array(
-	'post_type'      => 'page',
-	'posts_per_page' => -1,
-	'post_parent'    => $parent_post_id,
-	'post__not_in'   => array( $current_page_id ),
-));
+$q = new WP_Query(
+	array(
+		'post_type'      => 'page',
+		'posts_per_page' => -1,
+		'post_parent'    => $parent_post_id,
+		'post__not_in'   => array( $current_page_id ),
+		'meta_query'     => array(
+			'relation' => 'OR',
+			array(
+				'key'     => 'exclude_from_nav',
+				'compare' => 'NOT EXISTS',
+			),
+			array(
+				'key'     => 'exclude_from_nav',
+				'value'   => '1',
+				'compare' => '!=',
+			),
+		),
+	)
+);
 
 if ( $q->have_posts() ) {
 	?>
@@ -28,7 +42,7 @@ if ( $q->have_posts() ) {
 		<?php
 		while ( $q->have_posts() ) {
 			$q->the_post();
-			$img = get_the_post_thumbnail_url(get_the_ID(), 'large') ? get_the_post_thumbnail_url(get_the_ID(), 'large') : get_stylesheet_directory_uri() . '/img/placeholder-800x450.png';
+			$img = get_the_post_thumbnail_url( get_the_ID(), 'large' ) ? get_the_post_thumbnail_url( get_the_ID(), 'large' ) : get_stylesheet_directory_uri() . '/img/placeholder-800x450.png';
 			?>
 		<a href="<?= esc_url( get_the_permalink() ); ?>"
 		style="background-image:url(<?= esc_url( $img ); ?>)" ;

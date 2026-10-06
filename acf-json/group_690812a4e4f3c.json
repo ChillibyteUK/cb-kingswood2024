@@ -1,0 +1,50 @@
+{
+    "key": "group_690812a4e4f3c",
+    "title": "CB Page Settings",
+    "fields": [
+        {
+            "key": "field_690812a4e4f3d",
+            "label": "Exclude from Nav",
+            "name": "exclude_from_nav",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "Hide this page from the sibling navigation block shown on its sibling pages (e.g. SEO location pages).",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "Exclude this page from the sibling nav",
+            "default_value": 0,
+            "ui": 1,
+            "ui_on_text": "",
+            "ui_off_text": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            },
+            {
+                "param": "page_type",
+                "operator": "==",
+                "value": "child"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "side",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "modified": 1759760000
+}
